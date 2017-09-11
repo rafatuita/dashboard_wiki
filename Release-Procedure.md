@@ -1,8 +1,6 @@
 So you want to release a new version of Kubernetes Dashboard? Great, you just need to follow
 the steps below.
 
-## Release Process
-
 1. Test everything twice on Docker image and `gulp serve:prod`.
 2. Send a pull request that increases version numbers in all files. Follow versioning guidelines. Files to keep in sync are listed below:
    - `bower.json`
