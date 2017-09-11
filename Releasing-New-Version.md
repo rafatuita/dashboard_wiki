@@ -1,7 +1,7 @@
 So you want to release a new version of Kubernetes Dashboard? Great, you just need to follow
 the steps below.
 
-## Release procedure
+## Releasing New Version
 
 1. Test everything twice on Docker image and `gulp serve:prod`.
 2. Send a pull request that increases version numbers in all files. Follow versioning guidelines. Files to keep in sync are listed below:
@@ -15,7 +15,7 @@ the steps below.
 6. Update addons on the Kubernetes core repository. Dashboard addon directory is [here](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dashboard). If the update is minor, all that needs to be done is to change image version number in the main controller config file (`dashboard-controller.yaml`), and other configs, as described in the header of the config. If the release is major, this needs coordination with Kubernetes core team and possibly alignment with the schedule of the core.
 7. Also, update addon config in the [minikube](https://github.com/kubernetes/minikube/tree/master/deploy/addons) repo.
 
-## Versioning guidelines
+## Versioning
 
 Kubernetes Dashboard versioning follows [semver](http://semver.org/) in spirit. This means
 that is uses `vMAJOR.MINOR.PATCH` version numbers, but uses UX and consumer-centric approach for
