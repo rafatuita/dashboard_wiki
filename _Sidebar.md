@@ -1,4 +1,4 @@
-- [Home](https://github.com/kubernetes/dashboard/wiki)
+### [Home](https://github.com/kubernetes/dashboard/wiki)
 
 ### Development Guide
 
