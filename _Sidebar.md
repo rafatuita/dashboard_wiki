@@ -1,4 +1,6 @@
-### [Home](https://github.com/kubernetes/dashboard/wiki)
+### Common
+
+- [Home](https://github.com/kubernetes/dashboard/wiki)
 
 ### Development Guide
 
