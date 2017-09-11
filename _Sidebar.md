@@ -4,5 +4,5 @@
 
 ### Development Guide
 
-- [Release Process](https://github.com/kubernetes/dashboard/wiki/Release-Process)
+- [Release Procedure](https://github.com/kubernetes/dashboard/wiki/Release-Procedure)
 - [Go Dependencies Management](https://github.com/kubernetes/dashboard/wiki/Go-Dependencies-Management)
