@@ -1,3 +1,5 @@
+**[Home](https://github.com/kubernetes/dashboard/wiki)**
+
 ### Development Guide
 
-[Managing Go Dependencies](https://github.com/kubernetes/dashboard/wiki/Managing-Go-Dependencies)
+**[Managing Go Dependencies](https://github.com/kubernetes/dashboard/wiki/Managing-Go-Dependencies)**
