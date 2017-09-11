@@ -1,1 +1,2 @@
-Copyright 2017 The Kubernetes Dashboard Authors.
+Copyright 2015-2017 [The Kubernetes Dashboard Authors](https://github.com/kubernetes/dashboard/graphs/contributors). <br>
+Kubernetes Dashboard is made possible by the Dashboard community as an open source project.
