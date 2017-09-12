@@ -8,7 +8,7 @@ Dashboard is split into backend API and a frontend app. Backend API talks with K
 
 - Written in [Golang](https://golang.org/).
 - Code and tests are stored in `src/app/backend` directory. Test file names start the same as sources, but they are with `_test.go`.
-- Every frontend call hits `apihandler.go` which implements a series of handler functions to pass the results to resource-specific handlers.
+- Every API call hits `apihandler.go` which implements a series of handler functions to pass the results to resource-specific handlers.
 - Backend currently doesn't implement a cache, so calls to the Dashboard API will always make fresh calls to the  Kubernetes API server.
 
 ### Frontend
