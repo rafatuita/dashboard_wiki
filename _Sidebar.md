@@ -17,7 +17,6 @@
 
 - [Architecture](https://github.com/kubernetes/dashboard/wiki/Architecture)
 - [Access control]()
-- [Third party resources]()
 
 ### Development Guide
 
