@@ -8,6 +8,7 @@
 ### User Guide
 
 - [Troubleshooting](https://github.com/kubernetes/dashboard/wiki/Troubleshooting)
+- [Integrations]()
 
 ### Development Guide
 
