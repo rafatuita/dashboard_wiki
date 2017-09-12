@@ -1,4 +1,4 @@
-Following document describes Dashboard structure and code conventions. **It reflects only the structure as of version 1.6.x and may not reflect the structure of previous or future versions.**
+Following document describes Dashboard code structure and conventions. **It reflects only the structure as of version 1.6.x and may not reflect the structure of previous or future versions.**
 
 ## Structure
 
