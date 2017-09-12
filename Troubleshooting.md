@@ -11,7 +11,7 @@ If you have an error like "linux mounts: Path /var/lib/kubelet is mounted on / b
 
 If you run into an error like "Go is not on the path.", you may need to re-run `export PATH=$PATH:/usr/local/go/bin`
 
-## Helpful Linux Tips
+## Helpful Linux tips
 
 * `env` will show your environment variables. One common error is not having every directory needed in your PATH.
 
