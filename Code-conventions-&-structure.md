@@ -22,11 +22,6 @@ Dashboard is split into backend API and a frontend app. Backend API talks with K
 - [Material design guidelines](https://material.io/guidelines/)
 - Production javascript is compiled via [google closure compiler](https://developers.google.com/closure/compiler/), so please make sure all functions and variables are properly type annotated.
 
-### Tests
-- The frontend tests can be found in the `src/test/` directory. That test directory is structured to mirror the `/src/app` directory.
-
-- The backend tests can be found in the same directory as their source files in `src/app/backend`.
-
 An overview of the features provided by the dashboard can be found [here](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard)
 
 If you're looking for ideas on what to contribute, in addition to taking a look at issues with the `help-wanted` tag, you may also want to view the [Dashboard roadmap](https://github.com/kubernetes/dashboard/wiki/Roadmap)
