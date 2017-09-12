@@ -1,18 +1,12 @@
-This document describes the proper way of introducing new code to the Kubernetes Dashboard.
-
 ## Backend
 
-We are following conventions described in [Effective Go](https://golang.org/doc/effective_go.html) document.
-
-Go to our [Go Report Card](https://goreportcard.com/report/github.com/kubernetes/dashboard) to check how well
+We are following conventions described in [Effective Go](https://golang.org/doc/effective_go.html) document. Go to our [Go Report Card](https://goreportcard.com/report/github.com/kubernetes/dashboard) to check how well
 we are doing.
 
 ## Frontend
 
 We are following conventions described in 
-[Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md).
-
-Check following subsections for more rules and tips.
+[Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md). Check following subsections for more rules and tips.
 
 ### Naming conventions
 
