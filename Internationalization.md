@@ -1,6 +1,6 @@
-## Translations
-
 Based on current browser locale Dashboard can be displayed in one of the languages that it supports. Currently, list of languages includes Japanese and Chinese.
+
+## Translations
 
 All translation data is stored in `i18n` directory in project's root. It includes `locale_conf.json` configuration file and translation files for each language, i.e. `messages-ja.xtb` or `messages-zh.xtb`.
 
