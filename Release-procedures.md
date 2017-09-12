@@ -1,4 +1,4 @@
-### Official releases
+## Official releases
 
 After significant improvements have been done it is worth to release a new version. In order to do so just follow the steps described below:
 
