@@ -2,7 +2,7 @@ Currently only [Heapster](https://github.com/kubernetes/heapster) integration is
 
 ### Metric integrations
 
-Metric integrations allow Dashboard to show cpu and memory usage graphs, and sparklines of resources running inside the cluster.
+Metric integrations allow Dashboard to show cpu and memory usage graphs, and sparklines of resources running inside the cluster. In order to make Dashboard resilient to metric provider crashes there was `--metric-client-check-period` flag introduced. By default every 30 seconds health of the metric provider will be checked and in case it crashes metrics will be disabled.
 
 #### Heapster
 
