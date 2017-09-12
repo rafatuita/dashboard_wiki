@@ -28,6 +28,10 @@ If you have any further questions, feel free to ask in `#sig-ui` on the [kuberne
 
 ## Conventions
 
+### General
+
+- Use self-explanatory names in the code.
+
 ### Backend
 
 We are following conventions described in [Effective Go](https://golang.org/doc/effective_go.html) document.
@@ -41,6 +45,5 @@ We are following conventions described in [Angular 1 Style Guide](https://github
 
 Additionally, check list of rules and tips, that we are using:
 
-- Use self-explanatory names in the code.
 - Private method and variable names should end with a `_`.
 - In order to keep all tooltips consistent across whole application, we have decided to use 500 ms delay and auto-hide option. It allows us to avoid flickering when moving mouse over the pages and to hide tooltips after mouse is elsewhere but focus is still on the element with tooltip.
