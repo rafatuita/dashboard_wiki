@@ -13,7 +13,7 @@
 ### Development Guide
 
 - [Release procedures](https://github.com/kubernetes/dashboard/wiki/Release-procedures) ✓
-- [Getting started]()
+- [Getting started](https://github.com/kubernetes/dashboard/wiki/Getting-started)
 - [Requirements installation](https://github.com/kubernetes/dashboard/wiki/Requirements-installation)
 - [Development releases](https://github.com/kubernetes/dashboard/wiki/Development-Releases)
 - [Internationalization](https://github.com/kubernetes/dashboard/wiki/Internationalization)
