@@ -20,7 +20,7 @@ Make sure the following software is installed and added to the `$PATH` variable:
 * java (7+)
 * gulp (3.9+)
 
-In case not all required software is installed in your system, please follow [requirements installation guide]().
+In case not all required software is installed in your system, please follow [requirements installation guide](https://github.com/kubernetes/dashboard/wiki/Requirements-installation).
 
 Clone the repository and install the dependencies:
 
