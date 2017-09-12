@@ -28,10 +28,6 @@ If you have any further questions, feel free to ask in `#sig-ui` on the [kuberne
 
 ## Conventions
 
-### General
-
-- Use self-explanatory names in the code.
-
 ### Backend
 
 We are following conventions described in [Effective Go](https://golang.org/doc/effective_go.html) document.
