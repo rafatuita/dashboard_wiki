@@ -1,5 +1,4 @@
-All translation data is stored in `i18n` directory in project's root. It includes configuration file
-(`locale_conf.json`) and translation files for each language (`messages-en.xtb`, `messages-ja.xtb` and other).
+All translation data is stored in `i18n` directory in project's root. It includes `locale_conf.json` configuration file and translation files for each language, i.e. `messages-en.xtb` or `messages-ja.xtb`.
 
 ## New Language Introduction
 
