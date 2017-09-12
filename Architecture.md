@@ -1,6 +1,6 @@
 ## Overview
 
-Kubernetes Console project consists of two main components. They are called here the
+Kubernetes Dashboard project consists of two main components. They are called here the
 frontend and the backend.
 
 The frontend is a single page web application that runs in a browser. It fetches all its
