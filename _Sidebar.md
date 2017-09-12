@@ -12,6 +12,9 @@
 
 ### Development Guide
 
+- [Release procedures](https://github.com/kubernetes/dashboard/wiki/Release-procedures)
+
+
 - [Getting started]()
 - [Requirements installation]()
 - [Releases](https://github.com/kubernetes/dashboard/wiki/Releases)
