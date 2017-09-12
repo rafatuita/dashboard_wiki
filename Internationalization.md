@@ -1,10 +1,14 @@
-All translation data is stored in `i18n` directory in project's root. It includes `locale_conf.json` configuration file and translation files for each language, i.e. `messages-en.xtb` or `messages-ja.xtb`.
+## Translations
 
-## New Language Introduction
+Based on current browser locale Dashboard can be displayed in one of the languages that it supports. Currently, list of languages includes Japanese and Chinese.
+
+All translation data is stored in `i18n` directory in project's root. It includes `locale_conf.json` configuration file and translation files for each language, i.e. `messages-ja.xtb` or `messages-zh.xtb`.
+
+### Introducing new language
 
 To provide translations for a new language following steps have to be followed.
 
-### Configuration File Update
+#### Update configuration file
 
 Update `locale_conf.json` file to add new entry. Assuming following configuration:
 
@@ -38,9 +42,9 @@ So configuration should look like this:
 }
 ```
 
-### Translation File Generation
+#### Generating translation files
 
-To generate translation file run:
+To generate translation files run:
 
 ```sh
 gulp generate-xtbs
@@ -48,7 +52,7 @@ gulp generate-xtbs
 
 As a result new translation file should appear in `i18n` directory.
 
-## Translation Procedure
+### Translation procedure
 
 To provide translations for specific language you should open one of the translation files and replace its English content in `<translation>` markup elements. Assuming file is being translated to Spanish following element in translation file:
 
