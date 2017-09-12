@@ -29,7 +29,7 @@ such actions: "create a replication controller and a service for it" or "do a ro
 data sources). For example, getting a list of pods with their CPU utilization timeline
 requires at least two requests. Doing them on the backend shortens RTT.
 
-## Authentication to the Kubernetes API Server
+## Authentication with Kubernetes API Server
 
 A number of components are involved in the authentication process and the first step is to narrow
 down the source of the problem, namely whether it is a problem with user authentication or with service authentication.
