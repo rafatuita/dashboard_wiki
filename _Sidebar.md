@@ -16,7 +16,7 @@
 ### Design Guide
 
 - [Architecture]()
-- [Access Control]()
+- [Access control]()
 - [Third party resources]()
 
 ### Development Guide
