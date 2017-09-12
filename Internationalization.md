@@ -2,7 +2,7 @@ Based on current browser locale the Dashboard can be displayed in one of the lan
 
 From developer perspective localization is handled by [Google Closure Compiler's](https://github.com/google/closure-compiler) `goog.getMsg()` primitive. It allows the developer to define text that needs to be localized as simple variables anywhere in the code. The localization process itself is integrated into the build pipeline and backend component of Dashboard and happens automatically. Apart from placing new text into `MSG_` variables or `[[Message|]]` pattern and using those in the Angular templates, the developer is not required to do anything else.
 
-## Introducing new text
+## Introducing new localizable text
 
 An explanation of the proper way of introducing a new localizable test to the Dashboard. There are two ways to do so.
 
@@ -37,13 +37,10 @@ let MSG_IMAGE_PULL_SECRET_NAME_LENGTH_WARNING =
 
 For a quick reference please see [this cheat sheet](http://www.closurecheatsheet.com/i18n).
 
-
-
 #### Capitalization and punctuation
 * Only `_USER_HELP` and `_TOOLTIP` messages have standard punctuation and end with `.`
 * All of the messages have only their first word capitalized. Exceptions are names which appear in the middle of a message.
 * The human translators are supposed to keep the original capitalization and punctuation if applicable to the specific language.
-
 
 #### Organizing the text variables
 
@@ -104,7 +101,7 @@ This is a quick way of using multiple localized messages without changes in Java
  * Message variables are generated automatically during the build process. Their names depend on file name and message position within a file. It means, that if the message will be moved to another file, all its translations will be lost.
  * It is not possible to reference variables from `[[|]]` pattern.
 
-## Translations
+## Translation management
 
 All translation data is stored in `i18n` directory in project's root. It includes `locale_conf.json` configuration file and translation files for each language, i.e. `messages-ja.xtb` or `messages-zh.xtb`.
 
