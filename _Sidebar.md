@@ -13,6 +13,12 @@
 - [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
 - [Installation](https://github.com/kubernetes/dashboard/wiki/Installation)
 
+### Design Guide
+
+- [Architecture]()
+- [Access Control]()
+- [Third party resources]()
+
 ### Development Guide
 
 - [Release procedures](https://github.com/kubernetes/dashboard/wiki/Release-procedures) ✓
