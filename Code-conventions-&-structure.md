@@ -1,15 +1,16 @@
+Following document describes Dashboard structure and code conventions. **It reflects only the structure as of version 1.6.x and may not reflect the structure of previous or future versions.**
+
 ## Structure
 
-Kube dashboard is split into a *backend api* and a *frontend app*. The api is located in the backend folder and the frontend is located in the frontend folder in the `src` directory.
+Dashboard is split into backend API and a frontend app. Backend API talks with Kubernetes API and contains most of the application logic, frontend is used to display all the data to the user in a friendly way.
 
-**Note: Structure description reflects only the structure of the dashboard as of version 1.6.x and may not reflect the structure of previous or future dashboard versions**
+Application logic is stored under `src/app` directory, where `frontend` and `backend` directories can be found. Backend tests can be found in the same tree as tested files and their names are suffixed with `_test.go`. Frontend tests are located under `src/tests/frontend` directory, but their structure should reflect sources.
 
-### Backend (API)
-- Every api call hits `apihandler.go` which implements a series of handler functions to pass the results to resource-specific handlers.
+### Backend
 
-- The dashboard backend currently doesn't implement a cache, so calls to the dashboard api will always make fresh calls to the kubernetes apiserver.
-
-- The backend is written in [Golang](https://golang.org/).
+- Written in [Golang](https://golang.org/).
+- Every frontend call hits `apihandler.go` which implements a series of handler functions to pass the results to resource-specific handlers.
+- Backend currently doesn't implement a cache, so calls to the Dashboard API will always make fresh calls to the  Kubernetes API server.
 
 ### Frontend
 - The frontend makes calls to the api and renders received data. The frontend also transforms some data on the client and provides visualizations for the user. The frontend also makes calls to the api server to do things like exec into a container directly from the dashboard.
