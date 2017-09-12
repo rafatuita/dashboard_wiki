@@ -12,7 +12,7 @@
 
 ### Development Guide
 
-- [Release Procedure](https://github.com/kubernetes/dashboard/wiki/Release-Procedure)
+- [Release procedure](https://github.com/kubernetes/dashboard/wiki/Release-procedure)
 - [Development Releases](https://github.com/kubernetes/dashboard/wiki/Development-Releases)
 - [Internationalization](https://github.com/kubernetes/dashboard/wiki/Internationalization)
 - [Dependency management](https://github.com/kubernetes/dashboard/wiki/Dependency-management)
