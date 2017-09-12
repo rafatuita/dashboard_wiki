@@ -4,15 +4,17 @@ Following document describes Dashboard structure and code conventions. **It refl
 
 Dashboard is split into backend API and a frontend app. Backend API talks with Kubernetes API and contains most of the application logic, frontend is used to display all the data to the user in a friendly way.
 
-Application logic is stored under `src/app` directory, where `frontend` and `backend` directories can be found. Backend tests can be found in the same tree as tested files and their names are suffixed with `_test.go`. Frontend tests are located under `src/tests/frontend` directory, but their structure should reflect sources.
-
 ### Backend
 
 - Written in [Golang](https://golang.org/).
+- Code and tests are stored in `src/app/backend` directory. Test file names start the same as sources, but they are with `_test.go`.
 - Every frontend call hits `apihandler.go` which implements a series of handler functions to pass the results to resource-specific handlers.
 - Backend currently doesn't implement a cache, so calls to the Dashboard API will always make fresh calls to the  Kubernetes API server.
 
 ### Frontend
+
+- Code is stored in `src/app/frontend` directory.
+- Tests are stored in `src/tests/frontend` directory. Directory structure should reflect `src/app/frontend` directory.
 - The frontend makes calls to the api and renders received data. The frontend also transforms some data on the client and provides visualizations for the user. The frontend also makes calls to the api server to do things like exec into a container directly from the dashboard.
 
 - The frontend also automatically generates localized translations. You can generate translations manually by running `gulp generate-xtbs` or `gulp serve:prod`. Take a look at the [internationalization guide](https://github.com/kubernetes/dashboard/wiki/Internationalization).
