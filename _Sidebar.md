@@ -22,7 +22,7 @@
 
 - [Release procedures](https://github.com/kubernetes/dashboard/wiki/Release-procedures) ✓
 - [Dependency management](https://github.com/kubernetes/dashboard/wiki/Dependency-management) ✓
-- [Code conventions & structure](https://github.com/kubernetes/dashboard/wiki/Code-conventions-&-structure) ✓
+- [Code conventions & structure](https://github.com/kubernetes/dashboard/wiki/Code-conventions-&-structure)
 - [Code structure](https://github.com/kubernetes/dashboard/wiki/Code-structure) ✓
 - [Getting started](https://github.com/kubernetes/dashboard/wiki/Getting-started)
 - [Requirements installation](https://github.com/kubernetes/dashboard/wiki/Requirements-installation)
