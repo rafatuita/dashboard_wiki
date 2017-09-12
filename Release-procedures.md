@@ -1,4 +1,4 @@
-### Releasing official version
+### Official releases
 
 After significant improvements have been done it is worth to release a new version. In order to do so just follow the steps described below:
 
@@ -27,7 +27,7 @@ incrementing version numbers.
 
 Versions `0.X.Y` are reserved for initial development and may not strictly follow the guidelines.
 
-## Releasing official version
+### Development releases
 
 There is no need to do anything at all after everything was set up. Currently, Dashboard's continuous integration provides development releases on every successful master build. They are pushed to [`kubernetesdashboarddev/kubernetes-dashboard-$ARCH`](https://hub.docker.com/r/kubernetesdashboarddev)
 repositories. Each build produces one image for each architecture. The images are tagged
