@@ -13,13 +13,12 @@ Dashboard is split into backend API and a frontend app. Backend API talks with K
 
 ### Frontend
 
-- Written in JavaScript with [AngularJS](https://github.com/angular/angular.js).
+- Written in JavaScript.
+- Using [AngularJS](https://github.com/angular/angular.js), a model-view-controller along with [Material Design](https://material.angularjs.org/latest/getting-started) for cards, components, search bars, and all other visuals.
+- Production JavaScript is compiled via [Google Closure Compiler](https://developers.google.com/closure/compiler/), so please make sure all functions and variables are properly type annotated. You should follow [this](https://github.com/google/closure-compiler/wiki/Annotating-JavaScript-for-the-Closure-Compiler) guide.
 - Code is stored in `src/app/frontend` directory.
 - Tests are stored in `src/tests/frontend` directory. Directory structure should reflect `src/app/frontend` directory.
-- The frontend makes calls to the api and renders received data. The frontend also transforms some data on the client and provides visualizations for the user. The frontend also makes calls to the api server to do things like exec into a container directly from the dashboard.
-- The frontend also automatically generates localized translations. You can generate translations manually by running `gulp generate-xtbs` or `gulp serve:prod`. Take a look at the [internationalization guide](https://github.com/kubernetes/dashboard/wiki/Internationalization).
-- The frontend uses [angular](https://angular.io/), a javascript model-view-controller framework along with [material design](https://material.angularjs.org/latest/getting-started) for cards, components, search bars, and all other visuals.
-- Production javascript is compiled via [google closure compiler](https://developers.google.com/closure/compiler/), so please make sure all functions and variables are properly type annotated.
+- Frontend makes calls to the API and renders received data. It also transforms some data on the client and provides visualizations for the user. The frontend also makes calls to the API server to do things like exec into a container directly from the dashboard.
 
 An overview of the features provided by the dashboard can be found [here](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard)
 
@@ -50,10 +49,6 @@ Here is a list of rules, that we follow:
 - Private method and variable names should end with a `_`.
  
 Please notice, that this is not a list of all common programming rules. Use it as a list of tips designed for this project.
-
-#### JavaScript Annotations
-
-We are using [Closure Compiler](https://developers.google.com/closure/compiler/) and therefore we need to match few requirements. One of them is proper usage of annotations which is described [here](https://github.com/google/closure-compiler/wiki/Annotating-JavaScript-for-the-Closure-Compiler).
 
 #### Tooltips
 
