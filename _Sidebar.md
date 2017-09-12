@@ -19,3 +19,6 @@
 - [Requirements installation](https://github.com/kubernetes/dashboard/wiki/Requirements-installation)
 - [Development releases](https://github.com/kubernetes/dashboard/wiki/Development-Releases)
 - [Internationalization](https://github.com/kubernetes/dashboard/wiki/Internationalization)
+
+### Maintainers Guide
+- [Labels]()
