@@ -2,9 +2,9 @@ Based on current browser locale the Dashboard can be displayed in one of the lan
 
 From developer perspective localization is handled by [Google Closure Compiler's](https://github.com/google/closure-compiler) `goog.getMsg()` primitive. It allows the developer to define text that needs to be localized as simple variables anywhere in the code. The localization process itself is integrated into the build pipeline and backend component of Dashboard and happens automatically. Apart from placing new text into `MSG_` variables or `[[Message|]]` pattern and using those in the Angular templates, the developer is not required to do anything else.
 
-## Localization
+## Introducing new text
 
-An explanation of proper way of introducing new localizable test to the Dashboard.
+An explanation of the proper way of introducing a new localizable test to the Dashboard. There are two ways to do so.
 
 ### Localization with `MSG_` variables
 
