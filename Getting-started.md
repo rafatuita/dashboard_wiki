@@ -196,4 +196,4 @@ will be run automatically.
 
 ## Contribute
 
-Wish to contribute? Great, start [here](../../.github/CONTRIBUTING.md).
+Wish to contribute? Great, start [here]().
