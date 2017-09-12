@@ -8,10 +8,10 @@
 
 ### User Guide
 
-- [Troubleshooting](https://github.com/kubernetes/dashboard/wiki/Troubleshooting)
-- [Integrations](https://github.com/kubernetes/dashboard/wiki/Integrations)
-- [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
 - [Installation](https://github.com/kubernetes/dashboard/wiki/Installation)
+- [Integrations](https://github.com/kubernetes/dashboard/wiki/Integrations)
+- [Troubleshooting](https://github.com/kubernetes/dashboard/wiki/Troubleshooting)
+- [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
 
 ### Design Guide
 
