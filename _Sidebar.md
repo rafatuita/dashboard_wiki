@@ -10,6 +10,7 @@
 
 - [Troubleshooting](https://github.com/kubernetes/dashboard/wiki/Troubleshooting)
 - [Integrations](https://github.com/kubernetes/dashboard/wiki/Integrations)
+- [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
 
 ### Development Guide
 
@@ -21,5 +22,3 @@
 - [Development releases](https://github.com/kubernetes/dashboard/wiki/Development-Releases)
 - [Internationalization](https://github.com/kubernetes/dashboard/wiki/Internationalization)
 
-### Maintainers Guide
-- [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
