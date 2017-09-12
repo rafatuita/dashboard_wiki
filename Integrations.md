@@ -6,6 +6,6 @@ Metric integrations allow Dashboard to show cpu and memory usage graphs, and spa
 
 #### Heapster
 
-For the metrics and graphs to be available you need to have [Heapster](https://github.com/kubernetes/heapster/) running on your cluster. We require heapster to be deployed in `kube-system` namespace together with service named `heapster`. In case heapster is not accessible from inside the cluster you can provide heapster url as a flag to Dashboard container `--heapster-host=<heapster_url>`.
+For the sparklines and graphs to be shown in Dashboard you need to have [Heapster](https://github.com/kubernetes/heapster/) running on your cluster. We require heapster to be deployed in `kube-system` namespace together with service named `heapster`. In case heapster is not accessible from inside the cluster you can provide heapster url as a flag to Dashboard container `--heapster-host=<heapster_url>`.
 
 **NOTE:** Currently `--heapster-host` flag does not support HTTPS connection. Only HTTP urls should be used.
