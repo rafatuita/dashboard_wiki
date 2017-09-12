@@ -1,4 +1,4 @@
-Currently only [Heapster](https://github.com/kubernetes/heapster) integration is supported, however there are plans to introduce integration framework to Dashboard. It will allow to support and integrate more metric providers as well as additional applications such as [Weave Scope](https://github.com/weaveworks/scope) or [Grafana](https://github.com/grafana/grafana)
+Currently only [Heapster](https://github.com/kubernetes/heapster) integration is supported, however there are plans to introduce integration framework to Dashboard. It will allow to support and integrate more metric providers as well as additional applications such as [Weave Scope](https://github.com/weaveworks/scope) or [Grafana](https://github.com/grafana/grafana).
 
 ### Metric integrations
 
