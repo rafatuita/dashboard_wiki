@@ -21,4 +21,4 @@
 - [Internationalization](https://github.com/kubernetes/dashboard/wiki/Internationalization)
 
 ### Maintainers Guide
-- [Labels]()
+- [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
