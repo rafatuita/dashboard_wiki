@@ -12,7 +12,8 @@
 
 ### Development Guide
 
+- [Getting started]()
 - [Releases](https://github.com/kubernetes/dashboard/wiki/Releases)
-- [Development Releases](https://github.com/kubernetes/dashboard/wiki/Development-Releases)
+- [Development releases](https://github.com/kubernetes/dashboard/wiki/Development-Releases)
 - [Internationalization](https://github.com/kubernetes/dashboard/wiki/Internationalization)
 - [Dependency management](https://github.com/kubernetes/dashboard/wiki/Dependency-management)
