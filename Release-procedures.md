@@ -11,8 +11,8 @@ After significant improvements have been done it is worth to release a new versi
 3. Get the pull request reviewed and merged.
 4. Create a git [release tag](https://github.com/kubernetes/dashboard/releases/) for the merged pull request. Release description should include a changelog.
 5. Build and push production images to container registry. Use `gulp push-to-gcr:release`.
-6. Update add-ons on the Kubernetes core repository. Dashboard add-on directory is [here](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dashboard). If the update is minor, all that needs to be done is to change image version number in the main controller config file (`dashboard-controller.yaml`), and other configs, as described in the header of the config. If the release is major, this needs coordination with Kubernetes core team and possibly alignment with the schedule of the core.
-7. Update addon config in the [minikube](https://github.com/kubernetes/minikube/tree/master/deploy/addons) repo.
+6. Update add-ons on the [Kubernetes]((https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dashboard)) repository. If the update is minor, all that needs to be done is to change image version number in the main controller config file (`dashboard-controller.yaml`), and other configs, as described in the header of the config. If the release is major, this needs coordination with Kubernetes core team and possibly alignment with the schedule of the core.
+7. Update addon config in the [minikube](https://github.com/kubernetes/minikube/tree/master/deploy/addons) repository.
 
 #### Versioning guidelines
 
