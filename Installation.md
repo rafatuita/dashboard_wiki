@@ -1,8 +1,10 @@
-Development releases are build by our countinous integration on every successful master build. They are pushed to [`kubernetesdashboarddev/kubernetes-dashboard-$ARCH`](https://hub.docker.com/r/kubernetesdashboarddev)
-repositories. Each build produces one image for each architecture. The images are then tagged
-with SHA of the commit they were built at and `head` tag is updated to reference the newest one. It means that you can use them to test all the latest features and improvements, but they are not as stable as official releases. Following sections describe installation and discovery of development releases.
+## Official release
 
-## Installation
+## Development release
+
+Besides official releases, there are also development releases, that are done after every successful master build. It is not advised to use them on production environment as they are less stable than the official ones. Following sections describe installation and discovery of development releases.
+
+### Installation
 
 In most of the use cases you need to execute the following command to deploy latest development release:
 
@@ -17,13 +19,14 @@ kubernetes-dashboard-arm-head-no-rbac.yaml
 kubernetes-dashboard-arm-head.yaml
 kubernetes-dashboard-head-no-rbac.yaml
 ```
+
 To install them you need to replace `<image>` in following command:
 
 ```bash
 kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/<image>
 ```
 
-## Update to latest release
+### Update
 
 Once installed, the deployment is not automatically updated. In order to update it you need to delete the deployment's pod and wait for it to be recreated. After recreation, it should use the latest image.
 
