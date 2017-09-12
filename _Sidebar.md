@@ -1,6 +1,6 @@
 ### [Home](https://github.com/kubernetes/dashboard/wiki)
 
-### Common
+## Common
 
 - [FAQ]()
 - [Releases]()
