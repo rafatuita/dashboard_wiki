@@ -16,7 +16,7 @@ let MSG_IMAGE_PULL_SECRET_NAME_LENGTH_WARNING =
     goog.getMsg('Name must be up to {$maxLength} characters long.', {maxLength: '253'});
 ```
 
-Guidelines:
+#### Guidelines
 * Consistently name the object containing the variables for a given controller `i18n`.
 * All variable names *must* start with `MSG_`.
 * In the variable's name, after `MSG_`, try to write down the name of the controller (or part of Dashboard) to indicate where the variable is being used.
