@@ -13,16 +13,13 @@ Dashboard is split into backend API and a frontend app. Backend API talks with K
 
 ### Frontend
 
+- Written in JavaScript with [AngularJS](https://github.com/angular/angular.js).
 - Code is stored in `src/app/frontend` directory.
 - Tests are stored in `src/tests/frontend` directory. Directory structure should reflect `src/app/frontend` directory.
 - The frontend makes calls to the api and renders received data. The frontend also transforms some data on the client and provides visualizations for the user. The frontend also makes calls to the api server to do things like exec into a container directly from the dashboard.
-
 - The frontend also automatically generates localized translations. You can generate translations manually by running `gulp generate-xtbs` or `gulp serve:prod`. Take a look at the [internationalization guide](https://github.com/kubernetes/dashboard/wiki/Internationalization).
-
 - The frontend uses [angular](https://angular.io/), a javascript model-view-controller framework along with [material design](https://material.angularjs.org/latest/getting-started) for cards, components, search bars, and all other visuals.
-
 - [Material design guidelines](https://material.io/guidelines/)
-
 - Production javascript is compiled via [google closure compiler](https://developers.google.com/closure/compiler/), so please make sure all functions and variables are properly type annotated.
 
 ### Tests
