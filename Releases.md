@@ -37,7 +37,7 @@ Besides official releases Dashboard's continuous integration provides developmen
 repositories. Each build produces one image for each architecture. The images are tagged
 with SHA of the commit they were built at and `head` tag is updated to reference the newest one. It means that you can use them to test all the latest features and improvements, but they are not as stable as official releases. Following sections describe installation and discovery of development releases.
 
-### Installing release
+### Installing new release
 
 In most of the use cases you need to execute the following command to deploy latest development release:
 
@@ -58,7 +58,7 @@ To install them you need to replace `<image>` in following command:
 kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/<image>
 ```
 
-### Updating release
+### Updating release to the latest version
 
 Once installed, the deployment is not automatically updated. In order to update it you need to delete the deployment's pod and wait for it to be recreated. After recreation, it should use the latest image.
 
