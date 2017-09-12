@@ -1,6 +1,8 @@
+## Go dependencies
+
 We are using [`dep`](https://github.com/golang/dep) as a Go dependency management tool and `.gitignore` file to ignore redundant files like tests etc.
 
-## Updating Go dependencies
+### Updating Go dependencies
 
 1. Have the Dashboard source checked out in `${GOPATH}/src/github.com/kubernetes/dashboard`.
 2. Have [`dep`](https://github.com/golang/dep) installed.
