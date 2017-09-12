@@ -39,7 +39,7 @@ we are doing.
 
 We are following conventions described in [Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) and [Material Design Guidelines](https://material.io/guidelines/).
 
-Check following list of rules and tips, that we are using:
+Additionally, check following list of rules and tips, that we are using:
 
 - Use self-explanatory names in the code.
 - Private method and variable names should end with a `_`.
