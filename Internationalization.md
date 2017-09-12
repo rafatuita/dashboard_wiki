@@ -84,7 +84,7 @@ const i18n = {
 
 In the HTML code, use one-time bindings like `{{::ctrl.i18n.MSG_EXAMPLE_TEXT}}` for efficiency.
 
-### Localization with `[[Message|]]` pattern
+### Localization with `[[Message|Description]]` pattern
 
 Usage of `MSG_` variables in JavaScript and HTML files is not the only way to localize messages. The second option
 is to use specific pattern directly in HTML messages:
