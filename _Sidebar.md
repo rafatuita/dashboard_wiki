@@ -9,5 +9,6 @@
 ### Development Guide
 
 - [Release Procedure](https://github.com/kubernetes/dashboard/wiki/Release-Procedure)
+- [Development Releases](https://github.com/kubernetes/dashboard/wiki/Development-Releases)
 - [Translations Management](https://github.com/kubernetes/dashboard/wiki/Translations-Management)
 - [Go Dependencies Management](https://github.com/kubernetes/dashboard/wiki/Go-Dependencies-Management)
