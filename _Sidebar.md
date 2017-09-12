@@ -16,7 +16,7 @@
 ### Design Guide
 
 - [Architecture](https://github.com/kubernetes/dashboard/wiki/Architecture)
-- [Access control]()
+- [Access control](https://github.com/kubernetes/dashboard/wiki/Access-control)
 
 ### Development Guide
 
