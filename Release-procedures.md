@@ -14,7 +14,7 @@ After significant improvements have been done it is worth to release a new versi
 6. Update add-ons on the [Kubernetes](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dashboard) repository. If the update is minor, all that needs to be done is to change image version number in the main controller config file (`dashboard-controller.yaml`), and other configs, as described in the header of the config. If the release is major, this needs coordination with Kubernetes core team and possibly alignment with the schedule of the core.
 7. Update addon config in the [minikube](https://github.com/kubernetes/minikube/tree/master/deploy/addons) repository.
 
-#### Versioning guidelines
+### Versioning guidelines
 
 Kubernetes Dashboard versioning follows [semver](http://semver.org/) in spirit. This means
 that is uses `vMAJOR.MINOR.PATCH` version numbers, but uses UX and consumer-centric approach for
@@ -27,7 +27,7 @@ incrementing version numbers.
 
 Versions `0.X.Y` are reserved for initial development and may not strictly follow the guidelines.
 
-### Development releases
+## Development releases
 
 There is no need to do anything at all after everything was set up and now the whole process is automated. 
 
