@@ -26,8 +26,6 @@ sudo dnf install -y fedora-repos-rawhide
 sudo dnf install -y --enablerepo rawhide nodejs libuv --best --allowerasing
 ```
 
-### Check
-
 Use the following command to check which kernel version of your system:
 ```shell
 $ uname -r
@@ -83,8 +81,6 @@ $ sudo usermod -aG docker username
 $ su - $USER
 ```
 
-#### Check
-
 To run Docker without `sudo` command:
 ```shell
 $ docker run hello-world
@@ -110,8 +106,6 @@ $ export PATH=$PATH:/usr/local/go/bin
 $ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 ```
 
-### Check
-
 To get Go version:
 ```shell
 $ go version
@@ -136,8 +130,6 @@ $ nvm install 7.10
 $ nvm use 7.10
 ```
 
-### Check
-
 ```shell
 $ node -v
 $ npm -v
@@ -158,8 +150,6 @@ if you are fedora:
 $ sudo dnf install java-1.8.0-openjdk
 ```
 
-### Check
-
 To get Java version:
 ```shell
 $ java -version
@@ -174,8 +164,6 @@ To install Gulp using npm:
 $ sudo npm install --global gulp-cli
 $ sudo npm install --global gulp
 ```
-
-### Check
 
 To get Gulp version:
 ```shell
