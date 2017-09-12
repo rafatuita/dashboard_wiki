@@ -32,7 +32,7 @@ Use the following command to check which kernel version of your system:
 ```shell
 $ uname -r
 ```
-> You should get `3.13.0-129-generic` or something similar depending on what the current version is.
+You should get `3.13.0-129-generic` or something similar depending on what the current version is.
 
 Use this in the terminal to show the details about the installed Ubuntu "version":
 ```shell
