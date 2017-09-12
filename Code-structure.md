@@ -30,4 +30,4 @@ If you're looking for ideas on what to contribute, in addition to taking a look 
 
 - The backend tests can be found in the same directory as their source files in `src/app/backend`.
 
-If you have any further questions, feel free to ask in `#sig-ui` on the [kubernetes slack channel](http://slack.k8s.io/).
+If you have any further questions, feel free to ask in `#sig-ui` on the [kubernetes slack channel](https://kubernetes.slack.com).
