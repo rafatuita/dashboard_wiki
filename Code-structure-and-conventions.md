@@ -39,25 +39,8 @@ we are doing.
 
 We are following conventions described in [Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) and [Material Design Guidelines](https://material.io/guidelines/).
 
-Check following subsections for more rules and tips.
+Check following list of rules and tips, that we are using:
 
-#### Naming conventions
-
-Here is a list of rules, that we follow:
-
-- Self-explanatory names.
+- Use self-explanatory names in the code.
 - Private method and variable names should end with a `_`.
- 
-Please notice, that this is not a list of all common programming rules. Use it as a list of tips designed for this project.
-
-#### Tooltips
-
-In order to keep all tooltips consistent across whole application, we have decided to use 500 ms delay and auto-hide option. It allows us to avoid flickering when moving mouse over the pages and to hide tooltips after mouse is elsewhere but focus is still on the element with tooltip.
-
-Sample code:
-
-``` html
-<md-tooltip md-delay="500" md-autohide>
-   ...
-</md-tooltip>
-```
+- In order to keep all tooltips consistent across whole application, we have decided to use 500 ms delay and auto-hide option. It allows us to avoid flickering when moving mouse over the pages and to hide tooltips after mouse is elsewhere but focus is still on the element with tooltip.
