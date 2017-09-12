@@ -31,4 +31,4 @@ Versions `0.X.Y` are reserved for initial development and may not strictly follo
 
 There is no need to do anything at all after everything was set up. Currently, Dashboard's continuous integration provides development releases on every successful master build. They are pushed to [`kubernetesdashboarddev/kubernetes-dashboard-$ARCH`](https://hub.docker.com/r/kubernetesdashboarddev)
 repositories. Each build produces one image for each architecture. The images are tagged
-with SHA of the commit they were built at and `head` tag is updated to reference the newest one. It means that you can use them to test all the latest features and improvements, but they are not as stable as official releases.
+with SHA of the commit they were built at and `head` tag is updated to reference the newest one.
