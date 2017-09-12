@@ -17,12 +17,33 @@ let MSG_IMAGE_PULL_SECRET_NAME_LENGTH_WARNING =
 ```
 
 Guidelines:
+* Consistently name the object containing the variables for a given controller `i18n`.
 * All variable names *must* start with `MSG_`.
+* In the variable's name, after `MSG_`, try to write down the name of the controller (or part of Dashboard) to indicate where the variable is being used.
+* The suffix of the name should indicate the type (or role) of the text-resource in the Dashboard (check the table below).
 * Placeholders (`maxLength` above) are parts of the text that should remain the same in all translations.
 * The description of each variable (`@desc` above) should describe the context of its usage. It is supposed to help the translator.
 * The JavaDoc, containing all the annotations, should be kept at 1 line to reduce scrolling time.
 
+| Suffix       | Usage                                                                   |
+|--------------|:------------------------------------------------------------------------|
+| _TITLE       | Title at the top of a window/view                                       |
+| _SUBTITLE    | Subtitle placed directly beneath the title                              |
+| _LABEL       | Text used as a temporary placeholder or to name an input field          |
+| _ACTION      | A short phrase expressing an action (verb), usually meant to be clicked |
+| _WARNING     | Warning when a validation error occurs                                  |
+| _TOOLTIP     | Tooltip/toast text that appears on hover                                |
+| _USER_HELP   | Long text giving more details about a part of the UI                    |
+
 For a quick reference please see [this cheat sheet](http://www.closurecheatsheet.com/i18n).
+
+
+
+#### Capitalization and punctuation
+* Only `_USER_HELP` and `_TOOLTIP` messages have standard punctuation and end with `.`
+* All of the messages have only their first word capitalized. Exceptions are names which appear in the middle of a message.
+* The human translators are supposed to keep the original capitalization and punctuation if applicable to the specific language.
+
 
 #### Organizing the text variables
 
@@ -82,29 +103,6 @@ This is a quick way of using multiple localized messages without changes in Java
 
  * Message variables are generated automatically during the build process. Their names depend on file name and message position within a file. It means, that if the message will be moved to another file, all its translations will be lost.
  * It is not possible to reference variables from `[[|]]` pattern.
-
-## Naming conventions and guidelines
-* Consistently name the object containing the variables for a given controller `i18n`.
-* In the variable's name, after `MSG_`, try to write down the name of the controller (or part of Dashboard) to indicate where the variable is being used.
-* The suffix of the name should indicate the type (or role) of the text-resource in the Dashboard.
-
-#### Table of text-resource types
-| Suffix       | Usage                                                                   |
-|--------------|:------------------------------------------------------------------------|
-| _TITLE       | Title at the top of a window/view                                       |
-| _SUBTITLE    | Subtitle placed directly beneath the title                              |
-| _LABEL       | Text used as a temporary placeholder or to name an input field          |
-| _ACTION      | A short phrase expressing an action (verb), usually meant to be clicked |
-| _WARNING     | Warning when a validation error occurs                                  |
-| _TOOLTIP     | Tooltip/toast text that appears on hover                                |
-| _USER_HELP   | Long text giving more details about a part of the UI                    |
-
-#### Capitalization and punctuation
-* Only `_USER_HELP` and `_TOOLTIP` messages have standard punctuation and end with `.`
-* All of the messages have only their first word capitalized. Exceptions are names which appear in the middle of a message.
-* The human translators are supposed to keep the original capitalization and punctuation if applicable to the specific language.
-
-For more details check our text conventions guide.
 
 ## Translations
 
