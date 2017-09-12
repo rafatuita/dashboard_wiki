@@ -2,7 +2,7 @@
 
 Official releases are provided after significant improvements are done in the Dashboard. You can find them on our [releases](https://github.com/kubernetes/dashboard/releases) page. It is strongly advised to always use the latest version.
 
-### Release procedure
+### Releasing new version
 
 1. Test everything twice on Docker image and `gulp serve:prod`.
 2. Send a pull request that increases version numbers in all files. Follow versioning guidelines. Files to keep in sync are listed below:
@@ -35,7 +35,7 @@ Besides official releases Dashboard's continuous integration provides developmen
 repositories. Each build produces one image for each architecture. The images are tagged
 with SHA of the commit they were built at and `head` tag is updated to reference the newest one. It means that you can use them to test all the latest features and improvements, but they are not as stable as official releases. Following sections describe installation and discovery of development releases.
 
-### Installation
+### Installing release
 
 In most of the use cases you need to execute the following command to deploy latest development release:
 
@@ -56,7 +56,7 @@ To install them you need to replace `<image>` in following command:
 kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/<image>
 ```
 
-## Update to latest development release
+### Updating release
 
 Once installed, the deployment is not automatically updated. In order to update it you need to delete the deployment's pod and wait for it to be recreated. After recreation, it should use the latest image.
 
