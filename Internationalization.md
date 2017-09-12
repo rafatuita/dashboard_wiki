@@ -1,4 +1,11 @@
-Based on current browser locale the Dashboard can be displayed in one of the languages that are supported. At the moment list of supported languages includes Japanese, Chinese, Chinese Traditional and of course English which is primary language and will be used by default.
+Based on current browser locale the Dashboard can be displayed in one of the supported languages listed below. In case it does not work make sure that your browsers' locale is identified with correct language code.
+
+| Language          | Code          |
+| -------------     | ------------- |
+| English (default) | en            |
+| Chinese           | zh            |
+| Chinese (Taiwan)  | zh-tw         |
+| Japanese          | ja            |
 
 From developer perspective localization is handled by [Google Closure Compiler's](https://github.com/google/closure-compiler) `goog.getMsg()` primitive. It allows the developer to define text that needs to be localized as simple variables anywhere in the code. The localization process itself is integrated into the build pipeline and backend component of Dashboard and happens automatically. Apart from placing new text into `MSG_` variables or `[[Message|]]` pattern and using those in the Angular templates, the developer is not required to do anything else.
 
