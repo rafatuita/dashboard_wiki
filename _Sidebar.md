@@ -4,6 +4,7 @@
 
 - [FAQ]()
 - [Releases]()
+- [Roadmap](https://github.com/kubernetes/dashboard/wiki/Roadmap)
 
 ### User Guide
 
