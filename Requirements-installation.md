@@ -7,7 +7,7 @@ This has been tested on:
 * Ubuntu 16.04
 * Ubuntu 14.04
 
-## Initial System Setup
+## Initial system setup
 
 First update and upgrade your system:
 ```shell
