@@ -15,7 +15,7 @@ KubeDNS is running at https://192.168.30.148:6443/api/v1/namespaces/kube-system/
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 
-Start local proxy server:
+Start local proxy server.
 ```sh
 $ kubectl proxy
 Starting to serve on 127.0.0.1:8001
@@ -76,6 +76,8 @@ Dashboard has been exposed on a port `32703`. Now you can access it from your br
 
 ## API Server
 
+In case Kubernetes API server is exposed and accessible from outside you can directly access dashboard at: `http(s)://<master-ip>:<apiserver-port>/ui`.
+
 ## Ingress
 
-https://kubernetes.io/docs/concepts/services-networking/ingress/
+In case your cluster is running on AWS, GCE, etc. Dashboard can be also exposed using Ingress resource. For more information check: https://kubernetes.io/docs/concepts/services-networking/ingress.
