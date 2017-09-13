@@ -41,3 +41,4 @@ Other labels used for issues and pull requests.
 - `greenkeeper` - pull requests created by [greenkeeper.io bot](https://github.com/greenkeeperio-bot). This label is assigned automatically.
 - `help-wanted` - issues good for contributor onboarding.
 - `missing-details` - issues with missing details, that cannot be reproduced.
+- `do-not-merge/work-in-progress` - assigned automatically to pull requests with `WIP` in their title.
