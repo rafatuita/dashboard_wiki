@@ -1,6 +1,6 @@
 Kubernetes Dashboard is a web-based user interface for Kubernetes clusters. It consists of multiple views like overview pages, list of resources and resource details pages. Much textual information is required within these elements. Let's consider sample dialog:
 
-![Dashboard dialog](../dashboard-ui.png)
+![](https://github.com/kubernetes/dashboard/raw/master/docs/dashboard-ui.png)
 
 As you noticed there are a lot of different kinds of text messages in each view:
 
