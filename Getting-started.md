@@ -6,10 +6,10 @@ Make sure the following software is installed and added to the `$PATH` variable:
 
 * Docker (1.10+)
 * Golang (1.8+)
-* nodejs (7+)
-* NPM (3+)
+* Node.js (7+)
+* npm (3+)
 * Java (7+)
-* gulp (3.9+)
+* Gulp.js (3.9+)
 
 In case not all required software is installed in your system, please follow [requirements installation guide](https://github.com/kubernetes/dashboard/wiki/Requirements-installation).
 
