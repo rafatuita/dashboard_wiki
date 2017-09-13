@@ -27,6 +27,53 @@ Once proxy server is started you should be able to access Dashboard from your br
 
 This way of accessing Dashboard is only recommended for development environments in a single node setup. 
 
+Edit `kubernetes-dashboard` service.
+```sh
+$ kubectl -n kube-system edit service kubernetes-dashboard
+```
+
+You should see `yaml` representation of the service. Change `type: ClusterIP` to `type: NodePort` and save file. If it's already changed skip to next step.
+```yaml
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: 2017-09-11T08:00:46Z
+  labels:
+    k8s-app: kubernetes-dashboard
+  name: kubernetes-dashboard
+  namespace: kube-system
+  resourceVersion: "1300"
+  selfLink: /api/v1/namespaces/kube-system/services/kubernetes-dashboard
+  uid: 51392867-96c7-11e7-87e0-901b0e532516
+spec:
+  clusterIP: 10.103.169.125
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 32703
+    port: 80
+    protocol: TCP
+    targetPort: 9090
+  selector:
+    k8s-app: kubernetes-dashboard
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+```
+
+Next we need to check port on which Dashboard was exposed.
+```sh
+$ kubectl -n kube-system get service kubernetes-dashboard
+NAME                   CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+kubernetes-dashboard   10.103.169.125   <nodes>       80:32703/TCP   1d
+```
+
+Dashboard has been exposed on a port `32703`. Now you can access it from your browser at: `http://<master-ip>:32703`. `master-ip` can be found by executing `kubectl cluster-info`. Usually it is either `127.0.0.1` or IP of your machine, assuming that you cluster is running directly on the machine, on which these commands are executed.
+
 ## API Server
 
 ## Ingress
