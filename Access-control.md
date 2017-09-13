@@ -48,3 +48,5 @@ This method of logging in is provided for convenience only. Only authentication 
 ![zrzut ekranu z 2017-08-31 13-28-38](https://user-images.githubusercontent.com/2285385/29920994-5214087e-8e50-11e7-8ab9-c75755b62a47.png)
 
 ## Admin privileges
+
+TODO
