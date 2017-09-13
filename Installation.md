@@ -12,18 +12,10 @@ In most of the use cases you need to execute the following command to deploy lat
 kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard-head.yaml
 ```
 
-However, if you are not using RBAC and/or your cluster is running on ARM you might be interested in other deployments:
+You can also deploy dashboard on ARM-based clusters:
 
 ```
-kubernetes-dashboard-arm-head-no-rbac.yaml
-kubernetes-dashboard-arm-head.yaml
-kubernetes-dashboard-head-no-rbac.yaml
-```
-
-To install them you need to replace `<image>` in following command:
-
-```bash
-kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/<image>
+kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard-arm-head.yaml
 ```
 
 ### Update
