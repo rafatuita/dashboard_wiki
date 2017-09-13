@@ -2,7 +2,7 @@
 
 ### Common
 
-- [FAQ]()
+- [FAQ](https://github.com/kubernetes/dashboard/wiki/FAQ)
 - [Releases]()
 - [Roadmap](https://github.com/kubernetes/dashboard/wiki/Roadmap)
 
