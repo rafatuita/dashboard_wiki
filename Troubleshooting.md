@@ -10,15 +10,3 @@ If you have an error like "linux mounts: Path /var/lib/kubelet is mounted on / b
 ## Go
 
 If you run into an error like "Go is not on the path.", you may need to re-run `export PATH=$PATH:/usr/local/go/bin`
-
-## Helpful Linux tips
-
-* `env` will show your environment variables. One common error is not having every directory needed in your PATH.
-
-Using *vim* to edit files may be helpful for beginners.
-
-* `sudo apt-get install vim` will get *vim*
-* `sudo vim /path/to/folder/filename` will open the file you want to edit.
-* <kbd>i</kbd> = insert
-* <kbd>Esc</kbd> = stops inserting
-* `:x` = exits and saves
