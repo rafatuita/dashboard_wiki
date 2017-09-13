@@ -9,7 +9,7 @@ Kubernetes supports few ways of authenticating and authorizing users. You can re
 ## Authentication
 
 As of release 1.7 Dashboard supports user authentication based on:
-- [`Authorization: Bearer <token>`](#authorization-header) header passed in every request to Dashboard. Supported from release 1.6.
+- [`Authorization: Bearer <token>`](#authorization-header) header passed in every request to Dashboard. Supported from release 1.6. Has the highest priority. If present login view will not be shown.
 - [Bearer Token](#bearer-token) that can be used on Dashboard [login view](#login-view).
 - [Username/password](#basic) that can be used on Dashboard [login view](#login-view).
 - [Kubeconfig](#kubeconfig) file that can be used on Dashboard [login view](#login-view).
