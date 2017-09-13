@@ -1,6 +1,6 @@
-This document assumes you have a Linux machine (or VM), and that you have a brand new Ubuntu Linux environment setup, but does not assume familiarity with Linux. If you don't have a Linux environment and you're using Windows, you may want to read instructions on how to setup a Linux VM on Windows first.
+This document assumes you have a brand new Ubuntu Linux environment setup, but does not assume familiarity with Linux. If you don't have a Linux environment and you're using Windows, you may want to read instructions on how to setup a Linux VM on Windows first.
 
-Before you begin please make sure you can connect to your Linux machine and login. Command line instructions for Linux will be shown starting with `$`; you should only type the text following the `$`.
+Before you begin please make sure you can connect to your Linux machine and log in. Command line instructions for Linux will be shown starting with `$`; you should only type the text following the `$`.
 
 This has been tested on:
 * Ubuntu 17.04
