@@ -17,12 +17,11 @@
 
 ### Development Guide
 
-- [Release procedures](https://github.com/kubernetes/dashboard/wiki/Release-procedures) ✓
-- [Dependency management](https://github.com/kubernetes/dashboard/wiki/Dependency-management) ✓
-- [Architecture and conventions](https://github.com/kubernetes/dashboard/wiki/Architecture-and-conventions) ✓
-
-- [Text conventions](https://github.com/kubernetes/dashboard/wiki/Text-conventions)
-
 - [Getting started](https://github.com/kubernetes/dashboard/wiki/Getting-started)
 - [Requirements installation](https://github.com/kubernetes/dashboard/wiki/Requirements-installation)
+- [Release procedures](https://github.com/kubernetes/dashboard/wiki/Release-procedures)
+- [Dependency management](https://github.com/kubernetes/dashboard/wiki/Dependency-management)
+- [Architecture](https://github.com/kubernetes/dashboard/wiki/Architecture)
+- [Code conventions](https://github.com/kubernetes/dashboard/wiki/Code-conventions)
+- [Text conventions](https://github.com/kubernetes/dashboard/wiki/Text-conventions)
 - [Internationalization](https://github.com/kubernetes/dashboard/wiki/Internationalization)
