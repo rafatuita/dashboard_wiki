@@ -37,7 +37,7 @@ Once you are in possession of valid Bearer Token (accepted by Kubernetes API ser
 
 ### Basic
 
-Basic authentication is disabled by default. The reason is that Kubernetes API server needs be configured with authorization mode ABAC and `--basic-auth-file` flag provided. Without that API server automatically falls back to [anonymous user](https://kubernetes.io/docs/admin/authentication/#anonymous-requests) and there is no way to check if provided credentials are valid.
+Basic authentication is disabled by default. The reason is that Kubernetes API server needs to be configured with authorization mode ABAC and `--basic-auth-file` flag provided. Without that API server automatically falls back to [anonymous user](https://kubernetes.io/docs/admin/authentication/#anonymous-requests) and there is no way to check if provided credentials are valid.
 
 In order to enable basic auth in Dashboard `--authentication-mode=basic` flag has to be provided. By default it is set to `--authentication-mode=token`.
 
