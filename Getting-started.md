@@ -5,10 +5,10 @@ This document describes how to setup your development environment.
 Make sure the following software is installed and added to the `$PATH` variable:
 
 * Docker (1.10+)
-* go (1.8+)
+* Golang (1.8+)
 * nodejs (7+)
-* npm (3+)
-* java (7+)
+* NPM (3+)
+* Java (7+)
 * gulp (3.9+)
 
 In case not all required software is installed in your system, please follow [requirements installation guide](https://github.com/kubernetes/dashboard/wiki/Requirements-installation).
@@ -22,7 +22,7 @@ $ npm i
 If you are running commands with root privileges set `--unsafe-perm` flag:
 
  ```shell
- # npm i --unsafe-perm
+ npm i --unsafe-perm
  ```
 
 ## Run a Kubernetes cluster
