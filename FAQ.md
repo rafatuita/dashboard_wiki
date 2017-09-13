@@ -1,4 +1,4 @@
-## During development I receive a lot of strange errors in the browser's console. What is wrong?
+### During development I receive a lot of strange errors in the browser's console. What is wrong?
 
 You probably need to update your npm dependencies. To do it run following commands from Dashboard's root directory:
 
@@ -8,7 +8,7 @@ rm -rf bower_components
 npm i
 ```
 
-## Why my `Go is not in the path`?
+### Why my `Go is not in the path`?
 
 Running into an error like that probably means, that you need to rerun `export PATH=$PATH:/usr/local/go/bin`.
 
