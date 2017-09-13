@@ -18,7 +18,7 @@ timeline”. Figure 1 outlines the architecture of the project.
 
 ![Architecture Overview](https://github.com/kubernetes/dashboard/blob/master/docs/design/architecture.png)
 
-*Figure 1: Project architecture overview*
+<p style="text-align: center;"><i>Figure 1: Project architecture overview</i></p>
 
 The rationale for having a backend that implements business logic:
 
