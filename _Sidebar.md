@@ -12,7 +12,6 @@
 - [Accessing Dashboard](https://github.com/kubernetes/dashboard/wiki/Accessing-dashboard)
 - [Access control](https://github.com/kubernetes/dashboard/wiki/Access-control)
 - [Integrations](https://github.com/kubernetes/dashboard/wiki/Integrations)
-- [Troubleshooting](https://github.com/kubernetes/dashboard/wiki/Troubleshooting)
 - [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
 
 ### Development Guide
