@@ -33,7 +33,7 @@ Once installed, the deployment is not automatically updated. In order to update 
 Delete all Dashboard pods (assuming that Dashboard is deployed in `kube-system` namespace):
 ```sh
 $ kubectl -n kube-system delete $(kubectl -n kube-system get pod -o name | grep dashboard)
-
+# Example output
 pod "kubernetes-dashboard-3313488171-7706x" deleted
 pod "kubernetes-dashboard-3313488171-ddkqd" deleted
 pod "kubernetes-dashboard-3313488171-dpf9t" deleted
