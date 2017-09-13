@@ -17,6 +17,16 @@ Labels used to prioritize issues.
 - `priority/P2` - issue, that should be resolved soon. It can be feature, bug or anything else, which is not top priority at the moment.
 - `priority/P3` - lower priority issue, that will be resolved after issues with higher priority. It can be minor enhancement, which is not required at the moment.
 
+## Size
+Labels used to describe an issue size.
+
+- `XS`
+- `S`
+- `M`
+- `L`
+- `XL`
+- `XXL`
+
 ## CLA
 Labels used to determine if creator of pull request has signed the CLA. It has to be signed before change can be merged. Assigned automatically by @googlebot and @k8s-ci-robot.
 
