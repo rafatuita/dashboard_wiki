@@ -25,7 +25,7 @@ If you are running commands with root privileges set `--unsafe-perm` flag:
  npm i --unsafe-perm
  ```
 
-## Run a Kubernetes cluster
+## Running a Kubernetes cluster
 
 For development it is recommended to run a local Kubernetes cluster. For your convenience, a
 task is provided that checks out the latest stable version, and runs it inside a Docker container.
@@ -101,8 +101,7 @@ should be running (respective ports are given in parentheses):
 
 BrowserSync (9090)  ---> Dashboard backend (9091)  ---> Kubernetes API server (8080)
 
-
-## Building Dashboard for Production
+## Building Dashboard for production
 
 The Dashboard project can be built for production by using the following task:
 
@@ -137,7 +136,7 @@ You might notice that the Docker image is very small and requires only a few MB.
 Dashboard assets are added to a scratch image. This is possible, because the `dashboard`
 binary has no external dependencies. Awesome!
 
-## Run the Tests
+## Run the tests
 
 Unit tests should be executed after every source code change. The following task makes this
 a breeze by automatically executing the unit tests after every save action.
@@ -178,7 +177,7 @@ git commit
 git push -f origin my-feature
 ```
 
-## Building Dashboard Inside a Container
+## Building dashboard inside a container
 
 It's possible to run `gulp` and all the dependencies inside a development container. To do this,
 just replace `gulp [some arg]` commands with `build/run-gulp-in-docker.sh [some arg]` (e.g. `build/run-gulp-in-docker.sh serve`). If you
