@@ -28,18 +28,9 @@ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/
 
 ### Update
 
-Once installed, the deployment is not automatically updated. In order to update it you need to delete the deployment's pod and wait for it to be recreated. After recreation, it should use the latest image.
+Once installed, the deployment is not automatically updated. In order to update it you need to delete the deployments' pods and wait for it to be recreated. After recreation, it should use the latest image.
 
-Start by listing the pods in the `kube-system` namespace:
+Delete all Dashboard pods (assuming that Dashboard is deployed in `kube-system` namespace):
 ```sh
-$ kubectl --namespace=kube-system get pods
-NAME                                        READY     STATUS    RESTARTS   AGE
-...
-kubernetes-dashboard-1230846811-b95sv       1/1       Running   0          5m
-```
-
-And then delete the Dashboard's pods in the `kube-system` namespace:
-```sh
-$ kubectl --namespace=kube-system delete pods kubernetes-dashboard-1230846811-b95sv
-pod "kubernetes-dashboard-1230846811-b95sv" deleted
+$ kubectl -n kube-system delete $(kubectl -n kube-system get pod -o name | grep dashboard)
 ```
