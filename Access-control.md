@@ -12,7 +12,7 @@ As of release 1.7 Dashboard supports user authentication based on:
 - [`Authorization: Bearer <token>`](#authorization-header) header passed in every request to Dashboard. Supported from release 1.6.
 - [Bearer Token](#bearer-token) that can be used on Dashboard [login view](#login-view).
 - [Username/password](#basic) that can be used on Dashboard [login view](#login-view).
-- [Kubeconfig](#kubeconfig) file that can be used on Dashboard [login view](#login-view). Note that kubeconfig file has to be configured to use either Bearer Token or username/password. External identity providers or certificate-based authentication are not supported at this time.
+- [Kubeconfig](#kubeconfig) file that can be used on Dashboard [login view](#login-view).
 
 ### Login view
 Login view has been introduced in release 1.7. In order to make it appear in Dashboard you need to enable and access Dashboard over HTTPS. To do so you need to pass `--tls-cert-file` and `--tls-cert-key` flags to Dashboard. HTTPS endpoint will be exposed on port `8443` in Dashboard container. You can change it by providing `--port` flag.
@@ -43,7 +43,7 @@ In order to enable basic auth in Dashboard `--authentication-mode=basic` flag ha
 
 ### Kubeconfig
 
-This method of logging in is provided for convenience only. Only authentication options specified by `--authentication-mode` flag are supported in kubeconfig file. In case it is configured to use any other way, error will be shown in Dashboard.
+This method of logging in is provided for convenience. Only authentication options specified by `--authentication-mode` flag are supported in kubeconfig file. In case it is configured to use any other way, error will be shown in Dashboard. External identity providers or certificate-based authentication are not supported at this time.
 
 ![zrzut ekranu z 2017-08-31 13-28-38](https://user-images.githubusercontent.com/2285385/29920994-5214087e-8e50-11e7-8ab9-c75755b62a47.png)
 
