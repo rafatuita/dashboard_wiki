@@ -15,7 +15,7 @@ As of release 1.7 Dashboard supports user authentication based on:
 - [Kubeconfig](#kubeconfig) file that can be used on Dashboard [login view](#login-view).
 
 ### Login view
-Login view has been introduced in release 1.7. In order to make it appear in Dashboard you need to enable and access Dashboard over HTTPS. To do so you need to pass `--tls-cert-file` and `--tls-cert-key` flags to Dashboard. HTTPS endpoint will be exposed on port `8443` in Dashboard container. You can change it by providing `--port` flag.
+Login view has been introduced in release 1.7. In order to make it appear in Dashboard you need to enable and access Dashboard over HTTPS. To do so you need to pass `--tls-cert-file` and `--tls-cert-key` flags to Dashboard. HTTPS endpoint will be exposed on port `8443` of Dashboard container. You can change it by providing `--port` flag.
 
 Using `Skip` option will make Dashboard use privileges of Service Account used by Dashboard.
 
