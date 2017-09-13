@@ -80,4 +80,4 @@ In case Kubernetes API server is exposed and accessible from outside you can dir
 
 ## Ingress
 
-In case your cluster is running on AWS, GCE, etc. Dashboard can be also exposed using Ingress resource. For more information check: https://kubernetes.io/docs/concepts/services-networking/ingress.
+Dashboard can be also exposed using Ingress resource. For more information check: https://kubernetes.io/docs/concepts/services-networking/ingress.
