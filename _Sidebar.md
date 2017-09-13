@@ -15,10 +15,6 @@
 - [Troubleshooting](https://github.com/kubernetes/dashboard/wiki/Troubleshooting)
 - [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
 
-### Design Guide
-
-- [Architecture](https://github.com/kubernetes/dashboard/wiki/Architecture)
-
 ### Development Guide
 
 - [Release procedures](https://github.com/kubernetes/dashboard/wiki/Release-procedures) ✓
