@@ -14,11 +14,9 @@ outside of the cluster, given that it can connect to the master. The backend is 
 proxies data requests to appropriate remote backends (e.g., Kubernetes API server or Heapster) or implements
 business logic. The backend implements business logic when remote backends APIs do not
 support required use case directly, e.g., “get a list of pods with their CPU usage metric
-timeline”. Figure 1 outlines the architecture of the project.
+timeline”. The figure below outlines the architecture of the project:
 
 ![Architecture Overview](https://github.com/kubernetes/dashboard/blob/master/docs/design/architecture.png)
-
-*Figure 1: Project architecture overview*
 
 The rationale for having a backend that implements business logic:
 
