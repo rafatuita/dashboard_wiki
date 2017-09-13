@@ -27,6 +27,8 @@ Using authorization header is the only way to make Dashboard act as an user, whe
 
 To make Dashboard use authorization header you simply need to pass `Authorization: Bearer <token>` in every request to Dashboard. This can be achieved i.e. by configuring reverse proxy in front of Dashboard. Proxy will be responsible for authentication with identity provider and will pass generated token in request header to Dashboard. Note that Kubernetes API server needs to be configured properly to accept these tokens.
 
+To quickly test it you could use some browser plugin similar to [Requestly](https://chrome.google.com/webstore/detail/requestly-redirect-url-mo/mdnleldcmiljblolnjhpnblkcekpdkpa) that allows to manually modify request headers.
+
 ### Bearer Token
 
 ### Basic
