@@ -1,14 +1,5 @@
 This document describes how to setup your development environment.
 
-## Architecture Overview
-
-Kubernetes Dashboard project consists of two main components. They are called here the frontend and
-the backend. The frontend is a single page web application that runs in a browser. It fetches all
-its business data from the backend using standard HTTP methods. The backend implements UI-business
-logic and fetches raw data from the various Kubernetes APIs.
-
-[More information on the structure of the dashboard code]()
-
 ## Preparation
 
 Make sure the following software is installed and added to the `$PATH` variable:
@@ -34,7 +25,7 @@ If you are running commands with root privileges set `--unsafe-perm` flag:
  # npm i --unsafe-perm
  ```
 
-## Run a Kubernetes Cluster
+## Run a Kubernetes cluster
 
 For development it is recommended to run a local Kubernetes cluster. For your convenience, a
 task is provided that checks out the latest stable version, and runs it inside a Docker container.
