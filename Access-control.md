@@ -1,10 +1,16 @@
-Once Dashboard is installed and accessible we can focus on configuring access control to the cluster resources for users. As of release 1.7 Dashboard no longer has full admin privileges granted by default. All the privileges are revoked and only minimal privileges granted, that are required to make Dashboard work.
+Once Dashboard is installed and accessible we can focus on configuring access control to the cluster resources for users. As of release 1.7 Dashboard no longer has full admin privileges granted by default. All the privileges are revoked and only [minimal privileges granted](#default-dashboard-privileges), that are required to make Dashboard work.
 
 In case Dashboard is accessible only by trusted set of people, all with full admin privileges you may want to grant it full [admin privileges](#admin-privileges). Note that other applications should not access Dashboard directly as it may cause privilege escalation. Make sure that in-cluster traffic is restricted to namespaces or just revoke access to Dashboard for other applications inside the cluster.
 
 ## Introduction
 
 Kubernetes supports few ways of authenticating and authorizing users. You can read about them [here](https://kubernetes.io/docs/admin/authentication) and [here](https://kubernetes.io/docs/admin/authorization). Authorization is handled by Kubernetes API server. Dashboard only acts as a proxy and passes all auth information to it. In case of forbidden access corresponding warnings will be displayed in Dashboard.
+
+## Default Dashboard privileges
+
+- `create` and `watch` permission for secrets in `kube-system` namespace required to create and watch for changes of `kubernetes-dashboard-key-holder` secret.
+- `get`, `update` and `delete` permissions for secret named `kubernetes-dashboard-key-holder` in `kube-system` namespace.
+- `proxy` permission to `heapster` service in `kube-system` namespace required to allow getting metrics from heapster.
 
 ## Authentication
 
