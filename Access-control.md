@@ -31,8 +31,20 @@ To quickly test it check out [Requestly](https://chrome.google.com/webstore/deta
 
 ### Bearer Token
 
+Once you are in possession of valid Bearer Token (accepted by Kubernetes API server), it can used to log in to Dashboard. In example every Service Account has Secret with valid token that can be used to log in.
+
+![zrzut ekranu z 2017-09-13 11-29-36](https://user-images.githubusercontent.com/2285385/30370159-09af99aa-9877-11e7-8cb6-28fb9af88c83.png)
+
 ### Basic
 
+Basic authentication is disabled by default. The reason is that Kubernetes API server needs be configured with authorization mode ABAC and `--basic-auth-file` flag provided. Without that API server automatically falls back to [anonymous user](https://kubernetes.io/docs/admin/authentication/#anonymous-requests) and there is no way to check if provided credentials are valid.
+
+In order to enable basic auth in Dashboard `--authentication-mode=basic` flag has to be provided. By default it is set to `--authentication-mode=token`.
+
 ### Kubeconfig
+
+This method of logging in is provided for convenience only. Only authentication options specified by `--authentication-mode` flag are supported in kubeconfig file. In case it is configured to use any other way, error will be shown in Dashboard.
+
+![zrzut ekranu z 2017-08-31 13-28-38](https://user-images.githubusercontent.com/2285385/29920994-5214087e-8e50-11e7-8ab9-c75755b62a47.png)
 
 ## Admin privileges
