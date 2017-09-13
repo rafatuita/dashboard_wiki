@@ -1,6 +1,6 @@
 Once Dashboard is installed on your cluster it can be accessed in a few different ways. Note that this document does not describe all possible ways of accessing cluster applications. In case of any error while trying to access Dashboard, please first read our [FAQ]() and check [closed issues](https://github.com/kubernetes/dashboard/issues?q=is%3Aissue+is%3Aclosed). In most cases errors are caused by cluster configuration issues.
 
-## Kubectl proxy
+## `kubectl proxy`
 
 `kubectl proxy` creates proxy server between your machine and Kubernetes API server. By default it is only accessible locally (from the machine that started it).
 
