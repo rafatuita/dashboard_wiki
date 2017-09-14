@@ -5,9 +5,9 @@ In case you did not find any answer here and in [closed issues](https://github.c
 You probably need to update your npm dependencies. To do it run following commands from Dashboard's root directory:
 
 ```
-rm -rf node_modules
-rm -rf bower_components
-npm i
+$ rm -rf node_modules
+$ rm -rf bower_components
+$ npm i
 ```
 
 ### Why my `Go is not in the path`?
