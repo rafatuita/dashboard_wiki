@@ -7,13 +7,13 @@ Besides official releases, there are also development releases, that are pushed 
 In most of the use cases you need to execute the following command to deploy latest development release:
 
 ```bash
-kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard-head.yaml
+$ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard-head.yaml
 ```
 
 You can also deploy dashboard on ARM-based clusters:
 
 ```
-kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard-arm-head.yaml
+$ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard-arm-head.yaml
 ```
 
 ### Update
@@ -23,7 +23,6 @@ Once installed, the deployment is not automatically updated. In order to update 
 Delete all Dashboard pods (assuming that Dashboard is deployed in `kube-system` namespace):
 ```sh
 $ kubectl -n kube-system delete $(kubectl -n kube-system get pod -o name | grep dashboard)
-# Example output
 pod "kubernetes-dashboard-3313488171-7706x" deleted
 pod "kubernetes-dashboard-3313488171-ddkqd" deleted
 pod "kubernetes-dashboard-3313488171-dpf9t" deleted
