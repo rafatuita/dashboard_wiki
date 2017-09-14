@@ -1,4 +1,4 @@
-In case our FAQ and [clsoed issues](https://github.com/kubernetes/dashboard/issues?q=is%3Aissue+is%3Aclosed) did not resolve your issue, feel free to create new issue.
+In case our FAQ and [closed issues](https://github.com/kubernetes/dashboard/issues?q=is%3Aissue+is%3Aclosed) did not resolve your issue, feel free to create new issue.
 
 ### During development I receive a lot of strange errors in the browser's console. What may be wrong?
 
