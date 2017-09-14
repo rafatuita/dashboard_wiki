@@ -1,3 +1,5 @@
+In case our FAQ and [clsoed issues](https://github.com/kubernetes/dashboard/issues?q=is%3Aissue+is%3Aclosed) did not resolve your issue, feel free to create new issue.
+
 ### During development I receive a lot of strange errors in the browser's console. What may be wrong?
 
 You probably need to update your npm dependencies. To do it run following commands from Dashboard's root directory:
@@ -7,8 +9,6 @@ rm -rf node_modules
 rm -rf bower_components
 npm i
 ```
-
-If it is not helping create new issue to contact with us.
 
 ### Why my `Go is not in the path`?
 
