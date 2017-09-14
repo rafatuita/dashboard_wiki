@@ -2,7 +2,7 @@ In case you did not find any answer here and in [closed issues](https://github.c
 
 ###  During development I receive a lot of strange errors in the browser's console. What may be wrong?
 
-You probably need to update your npm dependencies. To do it run following commands from Dashboard's root directory:
+You probably need to update your npm dependencies. Run following commands from Dashboard's directory:
 
 ```
 $ rm -rf node_modules bower_components
