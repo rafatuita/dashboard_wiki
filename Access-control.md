@@ -25,7 +25,7 @@ Login view has been introduced in release 1.7. In order to make it appear in Das
 
 Using `Skip` option will make Dashboard use privileges of Service Account used by Dashboard.
 
-![zrzut ekranu z 2017-08-31 13-23-42](https://user-images.githubusercontent.com/2285385/29920823-a5c7f8d2-8e4f-11e7-9127-e858909688f6.png)
+![zrzut ekranu z 2017-09-14 09-17-02](https://user-images.githubusercontent.com/2285385/30416718-8ee657d8-992d-11e7-84c8-9ba5f4c78bb2.png)
 
 ### Authorization header
 
