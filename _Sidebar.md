@@ -3,7 +3,7 @@
 ### Common
 
 - [FAQ](https://github.com/kubernetes/dashboard/wiki/FAQ)
-- [Releases]()
+- Changelog
 - [Roadmap](https://github.com/kubernetes/dashboard/wiki/Roadmap)
 
 ### User Guide
