@@ -1,5 +1,3 @@
-## Official release
-
 ## Development release
 
 Besides official releases, there are also development releases, that are pushed after every successful master build. It is not advised to use them on production environment as they are less stable than the official ones. Following sections describe installation and discovery of development releases.
