@@ -39,7 +39,7 @@ To quickly test it check out [Requestly](https://chrome.google.com/webstore/deta
 
 ### Bearer Token
 
-Once you are in possession of valid Bearer Token (accepted by Kubernetes API server), it can used to log in to Dashboard. In example every Service Account has Secret with valid token that can be used to log in.
+Once you are in possession of valid Bearer Token (accepted by Kubernetes API server), it can be used to log in to Dashboard. In example every Service Account has Secret with valid token that can be used to log in.
 
 ![zrzut ekranu z 2017-09-13 11-29-36](https://user-images.githubusercontent.com/2285385/30370159-09af99aa-9877-11e7-8cb6-28fb9af88c83.png)
 
