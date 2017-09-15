@@ -75,7 +75,7 @@ NAME                   CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
 kubernetes-dashboard   10.100.124.90   <nodes>       80:30784/TCP,443:31707/TCP   21h
 ```
 
-Dashboard has been exposed on ports `30784 (HTTP)` and `31707 (HTTPS)`. Now you can access it from your browser at: `http://<master-ip>:30784` or `https://<master-ip>:31707`. `master-ip` can be found by executing `kubectl cluster-info`. Usually it is either `127.0.0.1` or IP of your machine, assuming that you cluster is running directly on the machine, on which these commands are executed.
+Dashboard has been exposed on ports `30784 (HTTP)` and `31707 (HTTPS)`. Now you can access it from your browser at: `http://<master-ip>:30784` or `https://<master-ip>:31707`. `master-ip` can be found by executing `kubectl cluster-info`. Usually it is either `127.0.0.1` or IP of your machine, assuming that your cluster is running directly on the machine, on which these commands are executed.
 
 In case you are trying to expose Dashboard using NodePort on a multi-node cluster, then you have to find out IP of the node on which Dashboard is running to access it. Instead of accessing `http(s)://<master-ip>:<nodePort>` you should access `http(s)://<node-ip>:<nodePort>`.
 
