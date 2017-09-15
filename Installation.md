@@ -18,7 +18,7 @@ $ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/maste
 
 ### Update
 
-Once installed, the deployment is not automatically updated. In order to update it you need to delete the deployments' pods and wait for it to be recreated. After recreation, it should use the latest image.
+Once installed, the deployment is not automatically updated. In order to update it you need to delete the deployment's pods and wait for it to be recreated. After recreation, it should use the latest image.
 
 Delete all Dashboard pods (assuming that Dashboard is deployed in `kube-system` namespace):
 ```sh
