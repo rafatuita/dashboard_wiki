@@ -22,6 +22,8 @@ Starting to serve on 127.0.0.1:8001
 Once proxy server is started you should be able to access Dashboard from your browser.
 
 To access HTTPS endpoint of dashboard go to: `http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard-head:https/proxy`
+
+
 To access HTTP endpoint of dashboard go to: `http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard-head:http/proxy`
 
 ## NodePort
