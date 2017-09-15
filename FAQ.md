@@ -43,4 +43,11 @@ proxy:5 GET https://<IP>/api/v1/namespaces/kube-system/services/kubernetes-dashb
 proxy:5 GET https://<IP>/api/v1/namespaces/kube-system/services/kubernetes-dashboard/static/app.68d2caa2.js
 ```
 
-This means there is a problem with your cluster or you are trying to access Dashboard in a wrong way. Usually this happens when you try to expose Dashboard using `kubectl proxy` in a wrong way. Try to expose and access it using **NodePort** method described in our [Accessing Dashboard](https://github.com/kubernetes/dashboard/wiki/Accessing-dashboard) guide. This will allow you to access Dashboard directly without any proxy involved. If this will work then this means it is **not** a Dashboard issue and you should seek for help on [core](https://github.com/kubernetes/kubernetes) repository or better yet read [Kubernetes Documentation](https://kubernetes.io/docs/tasks/) first to understand how it works.
+This means there is a problem with your cluster or you are trying to access Dashboard in a wrong way. Usually this happens when you try to expose Dashboard using `kubectl proxy` in a wrong way (i.e. missing permissions).
+
+You can quickly check if accessing
+`http://localhost:8001/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard/` instead of `http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy` will work for you.
+
+Other way of checking if your issues is related to Dashboard is to expose and access it using **NodePort** method described in our [Accessing Dashboard](https://github.com/kubernetes/dashboard/wiki/Accessing-dashboard) guide. This will allow you to access Dashboard directly without any proxy involved. 
+
+If any of described methods will work then this means it is **not** a Dashboard issue and you should seek for help on [core](https://github.com/kubernetes/kubernetes) repository or better yet read [Kubernetes Documentation](https://kubernetes.io/docs/tasks/) first to understand how it works.
