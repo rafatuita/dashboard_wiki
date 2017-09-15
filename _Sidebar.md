@@ -10,9 +10,8 @@
 
 - [Installation](https://github.com/kubernetes/dashboard/wiki/Installation)
 - Accessing Dashboard
-  - 1.7 and later
-  - Before 1.7
-- [Accessing Dashboard](https://github.com/kubernetes/dashboard/wiki/Accessing-dashboard)
+  - [1.7 and later]()
+  - [Before 1.7](https://github.com/kubernetes/dashboard/wiki/Accessing-dashboard)
 - [Access control](https://github.com/kubernetes/dashboard/wiki/Access-control)
 - [Integrations](https://github.com/kubernetes/dashboard/wiki/Integrations)
 - [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
