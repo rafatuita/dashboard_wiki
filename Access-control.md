@@ -6,8 +6,6 @@ Below note is only directed to people using Dashboard 1.7 and above.
 
 In case Dashboard is accessible only by trusted set of people, all with full admin privileges you may want to grant it full [admin privileges](#admin-privileges). Note that other applications should not access Dashboard directly as it may cause privileges escalation. Make sure that in-cluster traffic is restricted to namespaces or just revoke access to Dashboard for other applications inside the cluster.
 
-**IMPORTANT**
-
 ## Introduction
 
 Kubernetes supports few ways of authenticating and authorizing users. You can read about them [here](https://kubernetes.io/docs/admin/authentication) and [here](https://kubernetes.io/docs/admin/authorization). Authorization is handled by Kubernetes API server. Dashboard only acts as a proxy and passes all auth information to it. In case of forbidden access corresponding warnings will be displayed in Dashboard.
