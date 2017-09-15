@@ -51,8 +51,7 @@ spec:
   clusterIP: 10.103.169.125
   externalTrafficPolicy: Cluster
   ports:
-  - nodePort: 32703
-    port: 80
+  - port: 80
     protocol: TCP
     targetPort: 9090
   selector:
