@@ -42,24 +42,24 @@ You should see `yaml` representation of the service. Change `type: ClusterIP` to
 # reopened with the relevant failures.
 #
 apiVersion: v1
-kind: Service
-metadata:
-  creationTimestamp: 2017-09-11T08:00:46Z
-  labels:
-    k8s-app: kubernetes-dashboard
+...
   name: kubernetes-dashboard
   namespace: kube-system
-  resourceVersion: "1300"
-  selfLink: /api/v1/namespaces/kube-system/services/kubernetes-dashboard
-  uid: 51392867-96c7-11e7-87e0-901b0e532516
+  resourceVersion: "343478"
+  selfLink: /api/v1/namespaces/kube-system/services/kubernetes-dashboard-head
+  uid: 8e48f478-993d-11e7-87e0-901b0e532516
 spec:
-  clusterIP: 10.103.169.125
+  clusterIP: 10.100.124.90
   externalTrafficPolicy: Cluster
   ports:
-  - nodePort: 32703
+  - name: http
     port: 80
     protocol: TCP
     targetPort: 9090
+  - name: https
+    port: 443
+    protocol: TCP
+    targetPort: 8443
   selector:
     k8s-app: kubernetes-dashboard
   sessionAffinity: None
@@ -72,10 +72,12 @@ Next we need to check port on which Dashboard was exposed.
 ```sh
 $ kubectl -n kube-system get service kubernetes-dashboard
 NAME                   CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
-kubernetes-dashboard   10.103.169.125   <nodes>       80:32703/TCP   1d
+kubernetes-dashboard   10.100.124.90   <nodes>       80:30784/TCP,443:31707/TCP   21h
 ```
 
-Dashboard has been exposed on a port `32703`. Now you can access it from your browser at: `http://<master-ip>:32703`. `master-ip` can be found by executing `kubectl cluster-info`. Usually it is either `127.0.0.1` or IP of your machine, assuming that you cluster is running directly on the machine, on which these commands are executed.
+Dashboard has been exposed on ports `30784 (HTTP)` and `31707 (HTTPS)`. Now you can access it from your browser at: `http://<master-ip>:30784` or `https://<master-ip>:31707. `master-ip` can be found by executing `kubectl cluster-info`. Usually it is either `127.0.0.1` or IP of your machine, assuming that you cluster is running directly on the machine, on which these commands are executed.
+
+In case you are trying to expose Dashboard using NodePort on a multi-node cluster, then you have to find out IP of the node on which Dashboard is running to access it. Instead of accessing `http(s)://<master-ip>:<nodePort>` you should access `http(s)://<node-ip>:<nodePort>`.
 
 ## API Server
 
