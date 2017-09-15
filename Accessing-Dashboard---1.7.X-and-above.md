@@ -35,7 +35,7 @@ Edit `kubernetes-dashboard` service.
 $ kubectl -n kube-system edit service kubernetes-dashboard
 ```
 
-You should see `yaml` representation of the service. Change `type: ClusterIP` to `type: NodePort` and save file. If it's already changed skip to next step.
+You should see `yaml` representation of the service. Change `type: ClusterIP` to `type: NodePort` and save file. If it's already changed go to next step.
 ```yaml
 # Please edit the object below. Lines beginning with a '#' will be ignored,
 # and an empty file will abort the edit. If an error occurs while saving this file will be
