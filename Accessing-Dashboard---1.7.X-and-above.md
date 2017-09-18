@@ -1,3 +1,5 @@
+**IMPORTANT:** HTTPS endpoints are only available if you used [Recommended Setup]() to deploy Dashboard.
+
 ## `kubectl proxy`
 
 `kubectl proxy` creates proxy server between your machine and Kubernetes API server. By default it is only accessible locally (from the machine that started it).
