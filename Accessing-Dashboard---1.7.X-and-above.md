@@ -1,4 +1,4 @@
-**IMPORTANT:** HTTPS endpoints are only available if you used [Recommended Setup]() to deploy Dashboard.
+**IMPORTANT:** HTTPS endpoints are only available if you used [Recommended Setup]() to deploy Dashboard. In case you did not and you access Dashboard over HTTP, then Dashboard can be accessed in the same way as [older versions](https://github.com/kubernetes/dashboard/wiki/Accessing-Dashboard---1.6.X-and-below).
 
 ## `kubectl proxy`
 
