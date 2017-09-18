@@ -11,6 +11,7 @@
 - [Installation](https://github.com/kubernetes/dashboard/wiki/Installation)
 - [Certificate management](https://github.com/kubernetes/dashboard/wiki/Certificate-management)
 - [Accessing Dashboard](https://github.com/kubernetes/dashboard/wiki/Accessing-dashboard)
+   - [1.7.X and above](https://github.com/kubernetes/dashboard/wiki/Accessing-Dashboard---1.7.X-and-above)
 - [Access control](https://github.com/kubernetes/dashboard/wiki/Access-control)
 - [Integrations](https://github.com/kubernetes/dashboard/wiki/Integrations)
 - [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
