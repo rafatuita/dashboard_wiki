@@ -9,7 +9,7 @@
 ### User Guide
 
 - [Installation](https://github.com/kubernetes/dashboard/wiki/Installation)
-- [Creating self-signed certificates](https://github.com/kubernetes/dashboard/wiki/Creating-self-signed-certificates)
+- [Certificate management](https://github.com/kubernetes/dashboard/wiki/Certificate-management)
 - [Accessing Dashboard](https://github.com/kubernetes/dashboard/wiki/Accessing-dashboard)
 - [Access control](https://github.com/kubernetes/dashboard/wiki/Access-control)
 - [Integrations](https://github.com/kubernetes/dashboard/wiki/Integrations)
