@@ -1,6 +1,6 @@
 ## Official release
 
-The fastest way of deploying Dashboard has been described in our [README](https://github.com/kubernetes/dashboard/blob/master/README.md). It is destined for people that are new to Kubernetes. Other possible setups for more experienced users, that want to know more about our deployment procedure can be found below.
+The fastest way of deploying Dashboard has been described in our [README](https://github.com/kubernetes/dashboard/blob/master/README.md). It is destined for people that are new to Kubernetes and want to quickly start using Dashboard. Other possible setups for more experienced users, that want to know more about our deployment procedure can be found below.
 
 ### Recommended Setup
 
@@ -33,8 +33,6 @@ following command:
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/alternative/kubernetes-dashboard.yaml
 ```
-
--->
 
 ## Development release
 
