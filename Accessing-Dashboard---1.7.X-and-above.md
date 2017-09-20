@@ -77,9 +77,7 @@ In case you are trying to expose Dashboard using NodePort on a multi-node cluste
 
 ## API Server
 
-In case Kubernetes API server is exposed and accessible from outside you can directly access dashboard in two ways.
-
-### Dashboard HTTPS endpoint
+In case Kubernetes API server is exposed and accessible from outside you can directly access dashboard at:
 `https://<master-ip>:<apiserver-port>/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy`
 
 ## Ingress
