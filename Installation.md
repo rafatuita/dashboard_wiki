@@ -7,7 +7,7 @@ The fastest way of deploying Dashboard has been described in our [README](https:
 Full security can be ensured only by accessing Dashboard over HTTPS. In order to enable HTTPS mode certificates need
 to be passed to the application. They can be generated using public trusted Certificate Authorities like
 [Let's Encrypt](https://letsencrypt.org/) or [generated on your own](
-https://github.com/kubernetes/dashboard/wiki/Certificate-management#self-signed-certificate). 
+https://github.com/kubernetes/dashboard/wiki/Certificate-management#self-signed-certificate). In [Getting Started](https://github.com/kubernetes/dashboard/blob/master/README.md#getting-started) deployment guide [Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/) feature was used. It allowed to automatically generate and use self-signed certificates.
 
 This setup requires, that certificates are stored in a secret named `kubernetes-dashboard-certs` in `kube-system`
 namespace. Assuming that you have `dashboard.crt` and `dashboard.key` files stored under `$HOME/certs` directory,
