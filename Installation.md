@@ -1,11 +1,11 @@
 ## Official release
 
-TODO
+The fastest way of deploying Dashboard has been described in our [README](https://github.com/kubernetes/dashboard/blob/master/README.md). It is destined for people that are new to Kubernetes. Other possible setups for more experienced users, that want to know more about our deployment procedure can be found below.
 
-<!-- ### Recommended Setup
+### Recommended Setup
 
 Full security can be ensured only by accessing Dashboard over HTTPS. In order to enable HTTPS mode certificates need
-to be passed to the application. Certificates can be generated using public trusted Certificate Authorities like
+to be passed to the application. They can be generated using public trusted Certificate Authorities like
 [Let's Encrypt](https://letsencrypt.org/) or [generated on your own](
 https://github.com/kubernetes/dashboard/wiki/Certificate-management#self-signed-certificate). 
 
