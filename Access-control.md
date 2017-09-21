@@ -41,17 +41,17 @@ To quickly test it check out [Requestly](https://chrome.google.com/webstore/deta
 
 It is recommended to get familiar with [Kubernetes authentication](https://kubernetes.io/docs/admin/authentication) documentation first to find out how to get token, that can be used to log in. In example every Service Account has a Secret with valid Bearer Token that can be used to log in to Dashboard. 
 
-#### Example Bearer Token
+#### Sample Bearer Token
 
 ![zrzut ekranu z 2017-09-13 11-29-36](https://user-images.githubusercontent.com/2285385/30370159-09af99aa-9877-11e7-8cb6-28fb9af88c83.png)
 
 #### Getting token with `kubectl`
 
-There are many Service Accounts created in Kubernetes by default. All with different access permissions. In order to find example token, that can be used to log in we'll use `kubectl`:
+There are many Service Accounts created in Kubernetes by default. All with different access permissions. In order to find any token, that can be used to log in we'll use `kubectl`:
 
 ```bash
 # Check existing secrets in kube-system namespace
-kubectl -n kube-system get secret
+$ kubectl -n kube-system get secret
 # All secrets with type 'kubernetes.io/service-account-token' will allow to log in.
 # Note that they have different privileges.
 NAME                                     TYPE                                  DATA      AGE
