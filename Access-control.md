@@ -39,9 +39,75 @@ To quickly test it check out [Requestly](https://chrome.google.com/webstore/deta
 
 ### Bearer Token
 
-Once you are in possession of valid Bearer Token (accepted by Kubernetes API server), it can be used to log in to Dashboard. In example every Service Account has Secret with valid token that can be used to log in.
+It is recommended to get familiar with [Kubernetes authentication](https://kubernetes.io/docs/admin/authentication) documentation first to find out how to get token, that can be used to log in. In example every Service Account has a Secret with valid Bearer Token that can be used to log in to Dashboard. 
+
+#### Example Bearer Token
 
 ![zrzut ekranu z 2017-09-13 11-29-36](https://user-images.githubusercontent.com/2285385/30370159-09af99aa-9877-11e7-8cb6-28fb9af88c83.png)
+
+#### Getting token with `kubectl`
+
+There are many Service Accounts created in Kubernetes by default. All with different access permissions. In order to find example token, that can be used to log in we'll use `kubectl`:
+
+```bash
+# Check existing secrets in kube-system namespace
+kubectl -n kube-system get secret
+# Example output
+# All secrets with type 'kubernetes.io/service-account-token' will allow to log in. Note that they
+# all have different privileges.
+NAME                                     TYPE                                  DATA      AGE
+attachdetach-controller-token-xw1tw      kubernetes.io/service-account-token   3         10d
+bootstrap-signer-token-gz8qp             kubernetes.io/service-account-token   3         10d
+bootstrap-token-f46476                   bootstrap.kubernetes.io/token         5         10d
+certificate-controller-token-tp34m       kubernetes.io/service-account-token   3         10d
+daemon-set-controller-token-fqvwx        kubernetes.io/service-account-token   3         10d
+default-token-3d5t4                      kubernetes.io/service-account-token   3         10d
+deployment-controller-token-3gd7d        kubernetes.io/service-account-token   3         10d
+disruption-controller-token-gdsxq        kubernetes.io/service-account-token   3         10d
+endpoint-controller-token-vrxpg          kubernetes.io/service-account-token   3         10d
+flannel-token-xrldr                      kubernetes.io/service-account-token   3         10d
+foo-secret                               kubernetes.io/tls                     2         6d
+generic-garbage-collector-token-hk04n    kubernetes.io/service-account-token   3         10d
+heapster-token-wgwgx                     kubernetes.io/service-account-token   3         10d
+horizontal-pod-autoscaler-token-4865f    kubernetes.io/service-account-token   3         10d
+job-controller-token-q0wdp               kubernetes.io/service-account-token   3         10d
+kd-dashboard-token-token-bw08g           kubernetes.io/service-account-token   3         7d
+kube-dns-token-qc79f                     kubernetes.io/service-account-token   3         10d
+kube-proxy-token-22kd5                   kubernetes.io/service-account-token   3         10d
+kubernetes-dashboard-head-token-pq4hk    kubernetes.io/service-account-token   3         6d
+kubernetes-dashboard-key-holder          Opaque                                2         5d
+kubernetes-dashboard-token-7qmbc         kubernetes.io/service-account-token   3         6d
+namespace-controller-token-k6zfw         kubernetes.io/service-account-token   3         10d
+node-controller-token-0821f              kubernetes.io/service-account-token   3         10d
+persistent-volume-binder-token-vgt06     kubernetes.io/service-account-token   3         10d
+pod-garbage-collector-token-6pz9t        kubernetes.io/service-account-token   3         10d
+replicaset-controller-token-kzpmc        kubernetes.io/service-account-token   3         10d
+replication-controller-token-4x5wh       kubernetes.io/service-account-token   3         10d
+resourcequota-controller-token-srbqv     kubernetes.io/service-account-token   3         10d
+service-account-controller-token-7qp8r   kubernetes.io/service-account-token   3         10d
+service-controller-token-p46zd           kubernetes.io/service-account-token   3         10d
+statefulset-controller-token-npt26       kubernetes.io/service-account-token   3         10d
+token-cleaner-token-gdfq3                kubernetes.io/service-account-token   3         10d
+ttl-controller-token-pt064               kubernetes.io/service-account-token   3         10d
+# Let's get token from 'replicaset-controller-token-kzpmc'. It should have permissions to see 
+# Replica Sets in the cluster.
+$ kubectl -n kube-system describe secret replicaset-controller-token-kzpmc
+Name:		replicaset-controller-token-kzpmc
+Namespace:	kube-system
+Labels:		<none>
+Annotations:	kubernetes.io/service-account.name=replicaset-controller
+		kubernetes.io/service-account.uid=d0d93741-96c5-11e7-8245-901b0e532516
+
+Type:	kubernetes.io/service-account-token
+
+Data
+====
+ca.crt:		1025 bytes
+namespace:	11 bytes
+token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJyZXBsaWNhc2V0LWNvbnRyb2xsZXItdG9rZW4ta3pwbWMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicmVwbGljYXNldC1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiZDBkOTM3NDEtOTZjNS0xMWU3LTgyNDUtOTAxYjBlNTMyNTE2Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOnJlcGxpY2FzZXQtY29udHJvbGxlciJ9.wAzSLnDudLbAeeU9eRsPlVELLJ6EokDT8mLpEm868hh_Ot_7Pp68321a9ssddIczPqJeifG_nFaKovkdmjozysLvwYCfpKZEkQjl_VKrr9oBzrlGUk-1oaztoLMxxtlm1FuVd_2moWbrQYRv0sGdtmZLZl9vAfW2s3vpwSn_t8XRB-bcombjBakbjm3os4RsiutAS7vevdyJMkAIjKalwZnNJ0nMaY8qEpA85WjEF86zjj_QBpZFt8tJZ7IO3uUuTLgBdDJr8dPwJhkMZp_eE_zGkpsBlp34fdg-1_TQGDm0fokvBkRt8luSR9HnyYxk6UEk5MT60WeaEzvCe3J4SA
+```
+
+We can now use printed `token` to log in to Dashboard. To find out more about how to configure and use Bearer Tokens, please read [Introduction](https://github.com/kubernetes/dashboard/wiki/Access-control#introduction) section.
 
 ### Basic
 
