@@ -45,7 +45,7 @@ proxy:5 GET https://<IP>/api/v1/namespaces/kube-system/services/kubernetes-dashb
 
 **IMPORTANT:** There is a [known issue](https://github.com/kubernetes/kubernetes/issues/52729) related to Kubernetes 1.7.6 where `/ui` redirect does not work. Try to add trailing slash at the end of `/ui` redirect url: `http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/`
 
-This means there is a problem with your cluster or you are trying to access Dashboard in a wrong way. Usually this happens when you try to expose Dashboard using `kubectl proxy` in a wrong way (i.e. missing permissions).
+If this does not help then this means there is a problem with your cluster or you are trying to access Dashboard in a wrong way. Usually this happens when you try to expose Dashboard using `kubectl proxy` in a wrong way (i.e. missing permissions).
 
 You can quickly check if accessing
 `http://localhost:8001/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard/` instead of `http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy` will work for you.
