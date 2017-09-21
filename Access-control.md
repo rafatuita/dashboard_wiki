@@ -52,9 +52,8 @@ There are many Service Accounts created in Kubernetes by default. All with diffe
 ```bash
 # Check existing secrets in kube-system namespace
 kubectl -n kube-system get secret
-# Example output
-# All secrets with type 'kubernetes.io/service-account-token' will allow to log in. Note that they
-# all have different privileges.
+# All secrets with type 'kubernetes.io/service-account-token' will allow to log in.
+# Note that they have different privileges.
 NAME                                     TYPE                                  DATA      AGE
 attachdetach-controller-token-xw1tw      kubernetes.io/service-account-token   3         10d
 bootstrap-signer-token-gz8qp             kubernetes.io/service-account-token   3         10d
@@ -89,8 +88,8 @@ service-controller-token-p46zd           kubernetes.io/service-account-token   3
 statefulset-controller-token-npt26       kubernetes.io/service-account-token   3         10d
 token-cleaner-token-gdfq3                kubernetes.io/service-account-token   3         10d
 ttl-controller-token-pt064               kubernetes.io/service-account-token   3         10d
-# Let's get token from 'replicaset-controller-token-kzpmc'. It should have permissions to see 
-# Replica Sets in the cluster.
+# Let's get token from 'replicaset-controller-token-kzpmc'. 
+# It should have permissions to see Replica Sets in the cluster.
 $ kubectl -n kube-system describe secret replicaset-controller-token-kzpmc
 Name:		replicaset-controller-token-kzpmc
 Namespace:	kube-system
