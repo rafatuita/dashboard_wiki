@@ -30,13 +30,13 @@ P0 items are considered blockers for next (`1.x`) release. All else is tackled o
 |Security/IAM                 |IAM: don't crash/work correctly when IAM is enabled|P1|
 |Cross-functional             |Analytics|P1|
 |Cross-functional             |~Internationalization~|P1|done|
-|Cross-functional             |"Send feedback"/"Report bug" capability|P1|
+|Cross-functional             |~"Send feedback"/"Report bug" capability~|P1|done|
 |Create apps                  |Plugin integration with deployment tools (such as helm, deployment manager or kpm)|P1|
 |View cluster resources       |Show interconnections between resources: related resources, parents, children|P2|
 |Create apps                  |Deploy form: autosuggest from a container registry (GCR, docker hub, etc.)|P2|
 |Create apps                  |Deploy form: implement missing options (e.g., volumes, etc.)|P2|
 |View cluster resources       |~Show logs for controller resources (e.g., logs for all Pods of a Replica Set)~|P2|done|
-|View cluster resources       |Handle Pet Sets - list and basic details view|P2|
+|View cluster resources       |~Handle Pet Sets - list and basic details view~|P2|done|
 |View cluster resources       |Handle Containers - list and basic details view|P2|
 |View cluster resources       |Handle Secrets - list and basic details view|P2|
 |View cluster resources       |Handle Namespaces - list and basic details view|P2|
