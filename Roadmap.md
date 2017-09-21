@@ -35,7 +35,7 @@ P0 items are considered blockers for next (`1.x`) release. All else is tackled o
 |View cluster resources       |Show interconnections between resources: related resources, parents, children|P2|
 |Create apps                  |Deploy form: autosuggest from a container registry (GCR, docker hub, etc.)|P2|
 |Create apps                  |Deploy form: implement missing options (e.g., volumes, etc.)|P2|
-|View cluster resources       |Show logs for controller resources (e.g., logs for all Pods of a Replica Set)|P2|
+|View cluster resources       |~Show logs for controller resources (e.g., logs for all Pods of a Replica Set)~|P2|done|
 |View cluster resources       |Handle Pet Sets - list and basic details view|P2|
 |View cluster resources       |Handle Containers - list and basic details view|P2|
 |View cluster resources       |Handle Secrets - list and basic details view|P2|
@@ -43,13 +43,13 @@ P0 items are considered blockers for next (`1.x`) release. All else is tackled o
 |View cluster resources       |Handle Ingress - list and basic details view|P2|
 |Monitoring/troubleshooting   |Sparklines/metrics/graphs for Services|P2|
 |Monitoring/troubleshooting   |Logs viewer: show logs for O(days) time period|P2|
-|Monitoring/troubleshooting   |Logs viewer: handle large log files - O(GiB) in size|P2|
+|Monitoring/troubleshooting   |~Logs viewer: handle large log files - O(GiB) in size~|P2|done|
 |Monitoring/troubleshooting   |Events viewer: handle large event streams - O(1k) events|P2|
 |Multi cluster (Ubernetes)    |Native support of Ubernetes control plane: Dashboard can talk to it|P2|
 |Security/IAM                 |IAM: support IAM as first class citzen (e.g., disable a button when cannot delete a resource)|P2|
 |View cluster resources       |<other resources> - list and basic details view|P3|
 |Monitoring/troubleshooting   |Sparklines/metrics/graphs for Replica Sets/Controllers/Deployments|P3|
-|Monitoring/troubleshooting   |Logs viewer: aggregate logs across pods/containers/controllers|P3|
+|Monitoring/troubleshooting   |~Logs viewer: aggregate logs across pods/containers/controllers~|P3|done|
 |Monitoring/troubleshooting   |Events viewer: aggregate events across pods/containers/controllers|P3|
 |Manage apps/resources        |Custom edit views on resources|P3|
 |Manage apps/resources        |Custom actions on specific resources (e.g., rollback on deployments)|P3|
