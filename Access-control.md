@@ -9,7 +9,7 @@ Kubernetes supports few ways of authenticating and authorizing users. You can re
 ## Default Dashboard privileges
 
 - `create` and `watch` permission for secrets in `kube-system` namespace required to create and watch for changes of `kubernetes-dashboard-key-holder` secret.
-- `get`, `update` and `delete` permissions for secret named `kubernetes-dashboard-key-holder` in `kube-system` namespace.
+- `get`, `update` and `delete` permissions for secret named `kubernetes-dashboard-key-holder` and `kubernetes-dashboard-certs` in `kube-system` namespace.
 - `proxy` permission to `heapster` service in `kube-system` namespace required to allow getting metrics from heapster.
 
 ## Authentication
