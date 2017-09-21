@@ -29,7 +29,7 @@ P0 items are considered blockers for next (`1.x`) release. All else is tackled o
 |Security/IAM                 |Make the UI act on behalf of a user|P1|
 |Security/IAM                 |IAM: don't crash/work correctly when IAM is enabled|P1|
 |Cross-functional             |Analytics|P1|
-|Cross-functional             |Internationalization|P1|
+|Cross-functional             |~Internationalization~|P1|done|
 |Cross-functional             |"Send feedback"/"Report bug" capability|P1|
 |Create apps                  |Plugin integration with deployment tools (such as helm, deployment manager or kpm)|P1|
 |View cluster resources       |Show interconnections between resources: related resources, parents, children|P2|
