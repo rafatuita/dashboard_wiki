@@ -2,10 +2,9 @@
 
 The fastest way of deploying Dashboard has been described in our [README](https://github.com/kubernetes/dashboard/blob/master/README.md). It is destined for people that are new to Kubernetes and want to quickly start using Dashboard. Other possible setups for more experienced users, that want to know more about our deployment procedure can be found below.
 
-### Recommended Setup
+### Recommended setup
 
-Full security can be ensured only by accessing Dashboard over HTTPS. In order to enable HTTPS mode certificates need
-to be passed to the application. They can be generated using public trusted Certificate Authorities like
+Full security can be ensured only by accessing Dashboard over HTTPS. In order to enable HTTPS mode certificates  need to be passed to the application. They can be generated using public trusted Certificate Authorities like
 [Let's Encrypt](https://letsencrypt.org/) or [generated on your own](
 https://github.com/kubernetes/dashboard/wiki/Certificate-management#self-signed-certificate). In [Getting Started](https://github.com/kubernetes/dashboard/blob/master/README.md#getting-started) deployment guide [Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/) feature was used. It allowed to automatically generate and use self-signed certificates.
 
@@ -17,15 +16,15 @@ you should create secret with contents of these files:
 kubectl create secret generic kubernetes-dashboard-certs --from-file=$HOME/certs -n kube-system
 ```
 
-Afterwards, you are ready to deploy Dashboard using following command:
+Afterwards, you are ready to deploy Dashboard using the following command:
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
 ```
 
-### Alternative Setup
+### Alternative setup
 
-This setup is not fully secure, however installation does not require any additional steps. Certificates are not used and Dashboard is exposed only over HTTP. In this setup access
+This setup is not fully secure, however, installation does not require any additional steps. Certificates are not used and Dashboard is exposed only over HTTP. In this setup access
 control can be ensured only by using [Authorization Header](
 https://github.com/kubernetes/dashboard/wiki/Access-control#authorization-header) feature. 
 
