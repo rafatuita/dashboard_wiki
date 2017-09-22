@@ -23,7 +23,7 @@ Starting to serve on 127.0.0.1:8001
 
 Once proxy server is started you should be able to access Dashboard from your browser.
 
-To access HTTPS endpoint of dashboard go to: `http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy`
+To access HTTPS endpoint of dashboard go to: `http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/`
 
 **NOTE:** Dashboard should not be exposed publicly using `kubectl proxy` command as it only allows HTTP connection. For domains other than `localhost` and `127.0.0.1` it will not be possible to sign in. Nothing will happen after clicking `Sign in` button on login page.
 
@@ -78,7 +78,7 @@ In case you are trying to expose Dashboard using NodePort on a multi-node cluste
 ## API Server
 
 In case Kubernetes API server is exposed and accessible from outside you can directly access dashboard at:
-`https://<master-ip>:<apiserver-port>/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy`
+`https://<master-ip>:<apiserver-port>/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/`
 
 ## Ingress
 
