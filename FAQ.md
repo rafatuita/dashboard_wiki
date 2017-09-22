@@ -53,3 +53,9 @@ You can quickly check if accessing
 Other way of checking if your issue is related to Dashboard is to expose and access it using **NodePort** method described in our [Accessing Dashboard](https://github.com/kubernetes/dashboard/wiki/Accessing-dashboard) guide. This will allow you to access Dashboard directly without any proxy involved. 
 
 If any of described methods will work then this means it is **not** a Dashboard issue and you should seek for help on [core](https://github.com/kubernetes/kubernetes) repository or better yet read [Kubernetes Documentation](https://kubernetes.io/docs/tasks/) first to understand how it works.
+
+### I am using Kubernetes GCE cluster but getting forbidden access errors.
+
+Related issues: #2326
+
+Dashboard on GCE is installed by default with very little permissions. That is not an issue. You should grant `kubernetes-dashboard` Service Account more privileges in order to have access to cluster resources. Read [Kubernetes Documentation](https://kubernetes.io/docs/tasks/) to find out how to do it.
