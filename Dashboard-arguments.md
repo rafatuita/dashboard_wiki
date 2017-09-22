@@ -2,7 +2,7 @@ Dashboard container accepts multiple arguments that can be used to customize it 
 
 ## Arguments
 
-|                            | Default value | Description                                                                                                                                                                                                                                         |
+| Argument name              | Default value | Description                                                                                                                                                                                                                                         |
 |----------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | insecure-port              | 9090          | Theport to listen to for incoming HTTP requests.                                                                                                                                                                                                    |
 | port                       | 8443          | The secure port to listen to for incoming HTTPS requests.                                                                                                                                                                                           |
