@@ -17,7 +17,7 @@ After significant improvements have been done it is worth to release a new versi
 ### Versioning guidelines
 
 Kubernetes Dashboard versioning follows [semver](http://semver.org/) in spirit. This means
-that is uses `vMAJOR.MINOR.PATCH` version numbers, but uses UX and consumer-centric approach for
+that it uses `vMAJOR.MINOR.PATCH` version numbers, but uses UX and consumer-centric approach for
 incrementing version numbers.
 
 1. Increment MAJOR when there are breaking changes that affect user's workflows or the UX gets
