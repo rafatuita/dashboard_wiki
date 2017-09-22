@@ -1,5 +1,9 @@
 In case you did not find any answer here and in [closed issues](https://github.com/kubernetes/dashboard/issues?q=is%3Aissue+is%3Aclosed), [create new issue](https://github.com/kubernetes/dashboard/issues/new).
 
+### Dashboard is throwing `2017/09/22 16:42:54 open /certs/dashboard.crt: no such file or directory` error.
+
+This happens from time to time. Init container used to create self-signed certs has not finished its job and main Dashboard container has been started without required certificates. Try to delete and deploy Dashboard again. It should fix this issue.
+
 ### I cannot see any graphs in Dashboard, how to enable them?
 
 Make sure, that Heapster is up and running and Dashboard was able to connect with it. First you have to verify Heapster state with Dashboard or `kubectl` command. Then you should check Dashboard logs and look for `metric` and `Heapster` keywords. You can find more informations about Dashboard's Integrations [here](https://github.com/kubernetes/dashboard/wiki/Integrations).
