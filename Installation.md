@@ -44,13 +44,13 @@ Besides official releases, there are also development releases, that are pushed 
 In most of the use cases you need to execute the following command to deploy latest development release:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard-head.yaml
+$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard-head.yaml
 ```
 
 You can also deploy dashboard on ARM-based clusters:
 
 ```
-$ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard-arm-head.yaml
+$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard-arm-head.yaml
 ```
 
 ### Update
