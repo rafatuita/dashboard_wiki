@@ -5,6 +5,7 @@
 - [FAQ](https://github.com/kubernetes/dashboard/wiki/FAQ)
 - [Compatibility matrix](https://github.com/kubernetes/dashboard/wiki/Compatibility-matrix)
 - [Roadmap](https://github.com/kubernetes/dashboard/wiki/Roadmap)
+- [Dashboard arguments](https://github.com/kubernetes/dashboard/wiki/Dashboard-arguments)
 
 ### User Guide
 
