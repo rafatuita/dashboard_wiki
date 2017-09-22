@@ -56,6 +56,6 @@ If any of described methods will work then this means it is **not** a Dashboard 
 
 ### I am using Kubernetes GCE cluster but getting forbidden access errors.
 
-Related issues: #2326
+Related issues: [#2326](https://github.com/kubernetes/dashboard/issues/2326)
 
 Dashboard on GCE is installed by default with very little permissions. That is not an issue. You should grant `kubernetes-dashboard` Service Account more privileges in order to have access to cluster resources. Read [Kubernetes Documentation](https://kubernetes.io/docs/tasks/) to find out how to do it.
