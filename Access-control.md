@@ -124,7 +124,7 @@ This method of logging in is provided for convenience. Only authentication optio
 
 **IMPORTANT** Make sure that you know what you are doing before proceeding. Granting admin privileges to Dashboard's Service Account might be a security risk.
 
-You can grant full admin privileges to Dashboard's Service Account by creating below `ClusterRoleBinding`.
+You can grant full admin privileges to Dashboard's Service Account by creating below `ClusterRoleBinding`. Copy the YAML file based on chosen installation method and save as, i.e. `dashboard-admin.yaml`. Use `kubectl create -f dashboard-admin.yaml` to deploy it. Afterwards you can use `Skip` option on login page to access Dashboard.
 
 ### Official release
 ```yaml
