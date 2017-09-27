@@ -1,8 +1,8 @@
 ## Official release
 
-The fastest way of deploying Dashboard has been described in our [README](https://github.com/kubernetes/dashboard/blob/master/README.md). It is destined for people that are new to Kubernetes and want to quickly start using Dashboard on AMD64/ARM. Other possible setups for more experienced users, that want to know more about our deployment procedure can be found below.
-
 **IMPORTANT**: When upgrading from older version of Dashboard to 1.7 make sure to delete `ClusterRoleBinding` for `kubernetes-dashboard` Service Account, otherwise Dashboard will have full admin access to the cluster.
+
+The fastest way of deploying Dashboard has been described in our [README](https://github.com/kubernetes/dashboard/blob/master/README.md). It is destined for people that are new to Kubernetes and want to quickly start using Dashboard on AMD64/ARM. Other possible setups for more experienced users, that want to know more about our deployment procedure can be found below.
 
 ### Recommended setup
 
