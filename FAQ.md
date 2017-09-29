@@ -1,8 +1,8 @@
 In case you did not find any answer here and in [closed issues](https://github.com/kubernetes/dashboard/issues?q=is%3Aissue+is%3Aclosed), [create new issue](https://github.com/kubernetes/dashboard/issues/new).
 
-### Dashboard is throwing `2017/09/22 16:42:54 open /certs/dashboard.crt: no such file or directory` error.
+### Dashboard is throwing `open /certs/dashboard.crt: no such file or directory` error.
 
-This happens from time to time. Init container used to create self-signed certs has not finished its job and main Dashboard container has been started without required certificates. Try to delete and deploy Dashboard again. It should fix this issue.
+This happens from time to time. Init container used to create self-signed certs has not finished its job and main Dashboard container has been started without required certificates. Try redeploy Dashboard, it should fix the issue.
 
 ### I cannot see any graphs in Dashboard, how to enable them?
 
@@ -13,8 +13,7 @@ Make sure, that Heapster is up and running and Dashboard was able to connect wit
 You probably need to update your npm dependencies. Run following commands from Dashboard's root directory:
 
 ```sh
-$ rm -rf node_modules bower_components
-$ npm i
+rm -rf node_modules && npm i
 ```
 
 ### Why my `Go is not in the path`?
@@ -22,7 +21,7 @@ $ npm i
 Running into an error like that probably means, that you need to rerun following command:
 
 ```sh
-$ export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin
 ```
 
 ### I receive `linux mounts: Path /var/lib/kubelet is mounted on / but it is not a shared mount` error. What to do?
@@ -30,10 +29,8 @@ $ export PATH=$PATH:/usr/local/go/bin
 Try to run:
 
 ```sh
-$ sudo mount --bind /var/lib/kubelet /var/lib/kubelet
-$ sudo mount --make-shared /var/lib/kubelet
+sudo mount --bind /var/lib/kubelet /var/lib/kubelet && sudo mount --make-shared /var/lib/kubelet
 ```
-
 You can find more information [here](https://github.com/kubernetes/kubernetes/issues/4869#issuecomment-193640483).
 
 ### I am seeing 404 errors when trying to access Dashbord. Dashboard resources can not be loaded.
@@ -60,6 +57,6 @@ If any of described methods will work then this means it is **not** a Dashboard 
 
 ### I am using Kubernetes GCE cluster but getting forbidden access errors.
 
-Related issues: [#2326](https://github.com/kubernetes/dashboard/issues/2326)
-
 Dashboard on GCE is installed by default with very little permissions. That is not an issue. You should grant `kubernetes-dashboard` Service Account more privileges in order to have access to cluster resources. Read [Kubernetes Documentation](https://kubernetes.io/docs/tasks/) to find out how to do it.
+
+Related issues: [#2326](https://github.com/kubernetes/dashboard/issues/2326)
