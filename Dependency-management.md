@@ -10,10 +10,9 @@ In order to speed up the whole development process, we have decided to keep depe
 2. Have [`dep`](https://github.com/golang/dep) installed.
 3. Create new branch.
 4. Update dependency versions in `Gopkg.toml`.
-
 5. Run `dep ensure` to update dependencies. Add `-update` parameter to update dependencies within their current version range.
 6. Run `dep prune` to keep only used files.
-6. Build and run the unit tests. If they are broken most likely some of our vendor packages have
+7. Build and run the unit tests. If they are broken most likely some of our vendor packages have
 changed API and it needs to be fixed.
-7. Commit the changes in `vendor` directory and in our sources separately for easier review. It is important to not remove `.gitignore` file at this point.
-8. Send a pull request.
+8. Commit the changes in `vendor` directory and in our sources separately for easier review. It is important to not remove `.gitignore` file at this point.
+9. Send a pull request.
