@@ -1,6 +1,8 @@
 ## Go dependencies
 
-We are using [`dep`](https://github.com/golang/dep) as a Go dependency management tool and `.gitignore` file to ignore redundant files like tests etc.
+We are using [`dep`](https://github.com/golang/dep) as our Go dependency management tool. It is the official prototype, that most probably will become the official tool in the near future.
+
+In order to speed up the whole development process, we have decided to keep dependency files inside our repository. `.gitignore` file helps us to ignore redundant files like tests etc.
 
 ### Updating Go dependencies
 
