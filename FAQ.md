@@ -1,5 +1,13 @@
 In case you did not find any answer here and in [closed issues](https://github.com/kubernetes/dashboard/issues?q=is%3Aissue+is%3Aclosed), [create new issue](https://github.com/kubernetes/dashboard/issues/new).
 
+### I would like to use development environment on HTTPS, how can I do it?
+
+Development environment is started with `gulp serve` or `gulp serve:prod`. To make it run on HTTPS it needs to have certificates passed. To do it you need to use following flags for mentioned commands:
+
+- `tlsCert` - path to `.crt` file
+- `tlsKey` - path to `.key` file
+- `serveHttps` - flag to enable HTTPS mode
+
 ### Dashboard is throwing `open /certs/dashboard.crt: no such file or directory` error.
 
 This happens from time to time. Init container used to create self-signed certs has not finished its job and main Dashboard container has been started without required certificates. Try redeploy Dashboard, it should fix the issue.
