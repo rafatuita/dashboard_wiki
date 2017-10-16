@@ -20,12 +20,12 @@ Labels used to prioritize issues.
 ## Size
 Labels used to describe an issue size.
 
-- `XS`
-- `S`
-- `M`
-- `L`
-- `XL`
-- `XXL`
+- `size/XS`
+- ``size/S`
+- ``size/M`
+- ``size/L`
+- ``size/XL`
+- ``size/XXL`
 
 ## CLA
 Labels used to determine if creator of pull request has signed the CLA. It has to be signed before change can be merged. Assigned automatically by @googlebot and @k8s-ci-robot.
@@ -39,6 +39,7 @@ Other labels used for issues and pull requests.
 - `cluster-issue` - issues related to cluster configuration or cluster itself. These issues will not be fixed on Dashboard's side.
 - `duplicate` - duplicates, that should be closed and linked with original issues.
 - `greenkeeper` - pull requests created by [greenkeeper.io bot](https://github.com/greenkeeperio-bot). This label is assigned automatically.
-- `help-wanted` - issues good for contributor onboarding.
-- `missing-details` - issues with missing details, that cannot be reproduced.
+- `help wanted` - rather low priority issues, where any contributions are more than welcomed.
+- `good first issue` - issues good for contributor onboarding.
+- `missing details` - issues with missing details, that cannot be reproduced.
 - `do-not-merge/work-in-progress` - assigned automatically to pull requests with `WIP` in their title.
