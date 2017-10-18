@@ -66,3 +66,15 @@ If any of described methods will work then this means it is **not** a Dashboard 
 ### I am using Kubernetes GCE cluster but getting forbidden access errors.
 
 Dashboard on GCE is installed by default with very little permissions. That is not an issue. You should grant `kubernetes-dashboard` Service Account more privileges in order to have access to cluster resources. Read [Kubernetes Documentation](https://kubernetes.io/docs/tasks/) to find out how to do it. You can also check [#2326](https://github.com/kubernetes/dashboard/issues/2326) for more details.
+
+### `/ui` redirect does not work or shows `Error: 'malformed HTTP response`.
+
+Based on a way of deploying and accessing Dashboard ([HTTPS](#im-accessing-dashboard-over-https) or [HTTP](#im-accessing-dashboard-over-http)) there are different issues.
+
+#### I'm accessing Dashboard over HTTP
+There is a [known issue](https://github.com/kubernetes/kubernetes/issues/52729) related to Kubernetes 1.7.X where `/ui` redirect does not work. Try to add trailing slash at the end of `/ui` redirect url: `http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/`.
+
+#### I'm accessing Dashboard over HTTPS
+The reason why `/ui` redirect does not work for HTTPS is that it hasn't yet been updated in the core repository. You can track https://github.com/kubernetes/kubernetes/pull/53046#discussion_r145338754 to find out when it will be merged. Probably it won't be available until K8S `1.8.3`+.
+
+Correct links that can be used to access Dashboard are in our documentation. Check [Accessing Dashboard](https://github.com/kubernetes/dashboard/wiki/Accessing-dashboard) to find out more.
