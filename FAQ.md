@@ -69,10 +69,10 @@ Dashboard on GCE is installed by default with very little permissions. That is n
 
 ### `/ui` redirect does not work or shows `Error: 'malformed HTTP response`.
 
-Based on a way of deploying and accessing Dashboard ([HTTPS](#im-accessing-dashboard-over-https) or [HTTP](#im-accessing-dashboard-over-http)) there are different issues.
+Based on a way of deploying and accessing Dashboard (HTTPS or HTTP) there are different issues.
 
 #### I'm accessing Dashboard over HTTP
-There is a [known issue](https://github.com/kubernetes/kubernetes/issues/52729) related to Kubernetes 1.7.X where `/ui` redirect does not work. Try to add trailing slash at the end of `/ui` redirect url: `http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/`.
+There is a [known issue](https://github.com/kubernetes/kubernetes/issues/52729) related to Kubernetes 1.7.X where `/ui` redirect does not work. Try to add trailing slash at the end of `/ui` redirect url: `http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/`
 
 #### I'm accessing Dashboard over HTTPS
 The reason why `/ui` redirect does not work for HTTPS is that it hasn't yet been updated in the core repository. You can track https://github.com/kubernetes/kubernetes/pull/53046#discussion_r145338754 to find out when it will be merged. Probably it won't be available until K8S `1.8.3`+.
