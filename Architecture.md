@@ -1,4 +1,4 @@
-**It reflects only the structure as of version 1.6.x and may not reflect the structure of previous or future versions.**
+**IMPORTANT:** It reflects only the structure as of version 1.6.x and may not reflect the structure of previous or future versions.
 
 Kubernetes Dashboard project consists of two main components. They are called here the
 frontend and the backend.
