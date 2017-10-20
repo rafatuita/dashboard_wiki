@@ -22,28 +22,9 @@ If you are running commands with root privileges set `--unsafe-perm` flag:
  npm i --unsafe-perm
  ```
 
-## Running a Kubernetes cluster
+### Running the cluster
 
-For development it is recommended to run a local Kubernetes cluster. For your convenience, a
-task is provided that checks out the latest stable version, and runs it inside a Docker container.
-Run the following command:
-
-```shell
-$ gulp local-up-cluster --heapsterServerHost 'http://localhost:8082'
-```
-
-This will build and start a lightweight local cluster, consisting of a master and a single node.
-All processes run locally, in Docker container. The local cluster should behave like a real
-cluster, however, plugins like heapster are not installed. To shut it down, type the following
-command that kills all running Docker containers:
-
-```shell
-$ docker kill $(docker ps -aq)
-```
-
-From time to time you might want to use to a real Kubernetes cluster (e.g. GCE, Vagrant) instead
-of the local one. The most convenient way is to create a proxy. Run the following command instead
-of the gulp task from above:
+To make Dashboard work you need to have cluster running. If you would like to use local cluster we recommend [kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/), [minikube](https://kubernetes.io/docs/getting-started-guides/minikube/) or [kubeadm-dind-cluster](https://github.com/Mirantis/kubeadm-dind-cluster). The most convenient way is to make it work is to create a proxy. Run the following command:
 
 ```shell
 $ kubectl proxy --port=8080
