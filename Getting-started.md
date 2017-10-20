@@ -22,7 +22,7 @@ If you are running commands with root privileges set `--unsafe-perm` flag:
  npm i --unsafe-perm
  ```
 
-### Running the cluster
+## Running the cluster
 
 To make Dashboard work you need to have cluster running. If you would like to use local cluster we recommend [kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/), [minikube](https://kubernetes.io/docs/getting-started-guides/minikube/) or [kubeadm-dind-cluster](https://github.com/Mirantis/kubeadm-dind-cluster). The most convenient way is to make it work is to create a proxy. Run the following command:
 
