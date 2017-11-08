@@ -13,6 +13,7 @@ After significant improvements have been done it is worth to release a new versi
 5. Build and push production images to container registry. Use `gulp push-to-gcr:release`.
 6. Update add-ons on the [Kubernetes](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dashboard) repository. If the update is minor, all that needs to be done is to change image version number in the main controller config file (`dashboard-controller.yaml`), and other configs, as described in the header of the config. If the release is major, this needs coordination with Kubernetes core team and possibly alignment with the schedule of the core.
 7. Update addon config in the [minikube](https://github.com/kubernetes/minikube/tree/master/deploy/addons) repository.
+8. Update addon config in the [kops](https://github.com/kubernetes/kops/tree/master/addons/kubernetes-dashboard) repository.
 
 ### Versioning guidelines
 
