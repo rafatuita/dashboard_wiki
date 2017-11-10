@@ -6,16 +6,25 @@ In order to speed up the whole development process, we have decided to keep depe
 
 ### Updating dependencies
 
-1. Have the Dashboard checked out in `${GOPATH}/src/github.com/kubernetes/dashboard`.
-2. Have [`dep`](https://github.com/golang/dep) installed.
-3. Create a new branch.
-4. Update dependency versions in `Gopkg.toml`.
-5. Run `dep ensure` to update dependencies. Add `-update` parameter to update dependencies within their current version range.
-6. Run `dep prune` to keep only used files.
-7. Build and run the unit tests. If they are broken most likely some of our vendor packages have
-changed API and it needs to be fixed.
-8. Commit the changes in `vendor` directory and in our sources separately for easier review. It is important to not remove `.gitignore` file at this point.
-9. Send a pull request.
+Prerequisites:
+- code checked out in `${GOPATH}/src/github.com/kubernetes/dashboard`
+- installed [`dep`](https://github.com/golang/dep)
+
+Go dependency versions are stored in `Gopkg.toml` file. Its [format](https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md) should be similar to one presented below:
+
+```toml
+[[constraint]]
+  name = "k8s.io/client-go"
+  version = "v5.0.0"
+
+[[override]]
+  name = "github.com/emicklei/go-restful"
+  version = "1.0.0"
+```
+
+To update dependency version edit `Gopkg.toml` file and then run `dep ensure` to download dependencies. Adding `-update` parameter will update dependencies within their current version range too. In the end `dep prune` should be run to remove not used dependencies.
+
+*NOTE:* Commit the changes in `vendor` directory and in our sources separately for easier review. It is important to not remove `.gitignore` in any of commits.
 
 ## JavaScript dependencies
 
