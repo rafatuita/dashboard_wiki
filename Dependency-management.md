@@ -8,7 +8,7 @@ In order to speed up the whole development process, we have decided to keep depe
 
 1. Have the Dashboard checked out in `${GOPATH}/src/github.com/kubernetes/dashboard`.
 2. Have [`dep`](https://github.com/golang/dep) installed.
-3. Create new branch.
+3. Create a new branch.
 4. Update dependency versions in `Gopkg.toml`.
 5. Run `dep ensure` to update dependencies. Add `-update` parameter to update dependencies within their current version range.
 6. Run `dep prune` to keep only used files.
@@ -21,7 +21,7 @@ changed API and it needs to be fixed.
 
 We are using [npm](https://www.npmjs.com/) as a JavaScript package manager.
 
-TBD Greenkeeper
+In order to keep our dependencies up-to-date we have introduced [Greenkeeper](https://greenkeeper.io/) bot to the project. It scans for new dependency versions and automatically creates pull requests for them. Greenkeeper's pull request are marked with `greenkeeper` label.
 
 ### Checking for updates
 
