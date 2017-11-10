@@ -19,7 +19,7 @@ changed API and it needs to be fixed.
 
 ## JavaScript dependencies
 
-We are using [npm](https://www.npmjs.com/) as a JavaScript package manager.
+We are using [`npm`](https://www.npmjs.com/) as a JavaScript package manager.
 
 In order to keep our dependencies up-to-date we have introduced [Greenkeeper](https://greenkeeper.io/) bot to the project. It scans for new dependency versions and automatically creates pull requests for them. Greenkeeper's pull request are marked with `greenkeeper` label.
 
