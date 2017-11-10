@@ -23,6 +23,8 @@ We are using [`npm`](https://www.npmjs.com/) as a JavaScript package manager.
 
 In order to keep our dependencies up-to-date we have introduced [Greenkeeper](https://greenkeeper.io/) bot to the project. It scans for new dependency versions and automatically creates pull requests for them. Greenkeeper's pull request are marked with `greenkeeper` label.
 
+JavaScript dependencies are kept outside repository thanks to `.gitignore` file. In order to start developing it is needed to run `npm i` after checking out the repository.
+
 ### Checking for updates
 
 Run `gulp check-npm-deps` to check for updates. The output should be similar to one presented below:
