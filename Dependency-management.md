@@ -64,4 +64,21 @@ Run: 'gulp update-npm-deps', then 'npm install' to update dependencies.
 
 ### Updating dependencies
 
-TBD
+Run `gulp update-npm-deps` to update JavaScript dependencies. The output should be similar to one presented below:
+
+```
+$ gulp update-npm-deps
+[10:52:30] Requiring external module babel-register
+[10:52:32] Using gulpfile ~/go/src/github.com/kubernetes/dashboard/gulpfile.babel.js
+[10:52:32] Starting 'update-npm-deps'...
+Using /home/maciaszczykm/go/src/github.com/kubernetes/dashboard/package.json
+[..................] \ :
+ d3                    ~3.5.17  →  ~4.11.0 
+ hterm                  ~1.0.0  →   ~2.0.2 
+ browserify-istanbul    ~2.0.0  →   ~3.0.1 
+ karma-sauce-launcher   ~1.1.0  →   ~1.2.0 
+
+[10:52:36] Finished 'update-npm-deps' after 3.92 s
+Upgraded package.json\ :
+
+```
