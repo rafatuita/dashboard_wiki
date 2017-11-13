@@ -2,13 +2,13 @@
 
 **IMPORTANT:** When upgrading from older version of Dashboard to 1.7+ make sure to delete Cluster Role Binding for `kubernetes-dashboard` Service Account, otherwise Dashboard will have full admin access to the cluster.
 
+### Fast setup
+
 The fastest way of deploying Dashboard has been described in our [README](https://github.com/kubernetes/dashboard/blob/master/README.md). It is destined for people that are new to Kubernetes and want to quickly start using Dashboard on AMD64/ARM. Other possible setups for more experienced users, that want to know more about our deployment procedure can be found below.
 
 ### Recommended setup
 
-Full security can be ensured only by accessing Dashboard over HTTPS. In order to enable HTTPS mode certificates  need to be passed to the application. They can be generated using public trusted Certificate Authorities like
-[Let's Encrypt](https://letsencrypt.org/) or [generated on your own](
-https://github.com/kubernetes/dashboard/wiki/Certificate-management#self-signed-certificate). In [Getting Started](https://github.com/kubernetes/dashboard/blob/master/README.md#getting-started) deployment guide [Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/) feature was used. It allowed to automatically generate and use self-signed certificates.
+To access Dashboard directly (without `kubectl proxy`) valid certificates should be used to establish a secure HTTPS connection. They can be generated using public trusted Certificate Authorities like [Let's Encrypt](https://letsencrypt.org/). Use them to replace the auto-generated certificates from Dashboard.
 
 This setup requires, that certificates are stored in a secret named `kubernetes-dashboard-certs` in `kube-system`
 namespace. Assuming that you have `dashboard.crt` and `dashboard.key` files stored under `$HOME/certs` directory,
@@ -26,7 +26,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/s
 
 ### Alternative setup
 
-This setup is not fully secure, however, installation does not require any additional steps. Certificates are not used and Dashboard is exposed only over HTTP. In this setup access
+This setup is not fully secure. Certificates are not used and Dashboard is exposed only over HTTP. In this setup access
 control can be ensured only by using [Authorization Header](
 https://github.com/kubernetes/dashboard/wiki/Access-control#authorization-header) feature. 
 
