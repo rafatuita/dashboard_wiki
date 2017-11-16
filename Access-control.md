@@ -41,6 +41,11 @@ To quickly test it check out [Requestly](https://chrome.google.com/webstore/deta
 
 It is recommended to get familiar with [Kubernetes authentication](https://kubernetes.io/docs/admin/authentication) documentation first to find out how to get token, that can be used to log in. In example every Service Account has a Secret with valid Bearer Token that can be used to log in to Dashboard. 
 
+Recommended lecture to find out how to create Service Account and grant it privileges:
+- [Service Account Tokens](https://kubernetes.io/docs/admin/authentication/#service-account-tokens)
+- [Role and ClusterRole](https://kubernetes.io/docs/admin/authorization/rbac/#role-and-clusterrole)
+- [Service Account Permissions](https://kubernetes.io/docs/admin/authorization/rbac/#service-account-permissions)
+
 #### Sample Bearer Token
 
 ![zrzut ekranu z 2017-09-13 11-29-36](https://user-images.githubusercontent.com/2285385/30370159-09af99aa-9877-11e7-8cb6-28fb9af88c83.png)
