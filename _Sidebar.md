@@ -15,6 +15,7 @@
    - [1.7.X and above](https://github.com/kubernetes/dashboard/wiki/Accessing-Dashboard---1.7.X-and-above)
    - [1.6.X and below](https://github.com/kubernetes/dashboard/wiki/Accessing-Dashboard---1.6.X-and-below)
 - [Access control](https://github.com/kubernetes/dashboard/wiki/Access-control)
+   - [Creating sample user](https://github.com/kubernetes/dashboard/wiki/Creating-sample-user)
 - [Integrations](https://github.com/kubernetes/dashboard/wiki/Integrations)
 - [Labels](https://github.com/kubernetes/dashboard/wiki/Labels)
 
