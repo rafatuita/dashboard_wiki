@@ -58,3 +58,10 @@ token:      eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZ
 ```
 
 Now copy the token and paste it into `Enter token` field on log in screen.
+![zrzut ekranu z 2017-12-13 11-07-13](https://user-images.githubusercontent.com/2285385/33933406-e320cdb0-dff5-11e7-9d8d-4ad0f214ab61.png)
+
+Click `Sign in` button and that's it. You are now logged in as an admin.
+
+![zrzut ekranu z 2017-12-13 11-08-37](https://user-images.githubusercontent.com/2285385/33933452-0f8440b2-dff6-11e7-8dad-43ce9b1fe657.png)
+
+In order to find out more about how to grant/deny permissions in Kubernetes read official [authentication](https://kubernetes.io/docs/admin/authentication/) & [authorization](https://kubernetes.io/docs/admin/authorization/) documentation.
