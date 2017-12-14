@@ -60,7 +60,7 @@ token:      eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZ
 ```
 
 Now copy the token and paste it into `Enter token` field on log in screen.
-![zrzut ekranu z 2017-12-13 11-07-13](https://user-images.githubusercontent.com/2285385/33933406-e320cdb0-dff5-11e7-9d8d-4ad0f214ab61.png)
+![zrzut ekranu z 2017-12-14 10-58-28](https://user-images.githubusercontent.com/2285385/33986408-c3a8af98-e0bd-11e7-9a59-608c30b8a5ea.png)
 
 Click `Sign in` button and that's it. You are now logged in as an admin.
 
