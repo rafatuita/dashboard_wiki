@@ -10,6 +10,8 @@ Development environment is started with `gulp serve` or `gulp serve:prod`. To ma
 
 ### Dashboard is throwing `open /certs/dashboard.crt: no such file or directory` error.
 
+**It was fixed in 1.8.0 release and should not happen anymore.**
+
 This happens from time to time. Init container used to create self-signed certs has not finished its job and main Dashboard container has been started without required certificates. Try redeploy Dashboard, it should fix the issue.
 
 ### I cannot see any graphs in Dashboard, how to enable them?
