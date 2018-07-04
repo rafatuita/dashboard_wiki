@@ -10,7 +10,7 @@ Make sure the following software is installed and added to the `$PATH` variable:
 * Java 7+ ([installation manual](http://openjdk.java.net/install/))
 * Gulp.js 3.9+ ([installation manual](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#install-the-gulp-command))
 
-Clone the repository and install the dependencies:
+Clone the repository into `$GOPATH/kubernetes/dashboard` and install the dependencies:
 
 ```shell
 $ npm i
