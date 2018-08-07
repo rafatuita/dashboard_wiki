@@ -8,7 +8,7 @@ Make sure the following software is installed and added to the `$PATH` variable:
 * Golang 1.8+ ([installation manual](https://golang.org/dl/))
 * Node.js 8+ and npm 5+ ([installation with nvm](https://github.com/creationix/nvm#usage))
 * Java 7+ ([installation manual](http://openjdk.java.net/install/))
-* Gulp.js 3.9+ ([installation manual](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#install-the-gulp-command))
+* Gulp.js 3.9+ ([installation manual](https://github.com/gulpjs/gulp/blob/master/docs/getting-started/1-quick-start.md))
 
 Clone the repository into `$GOPATH/src/github.com/kubernetes/dashboard` and install the dependencies:
 
