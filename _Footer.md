@@ -1,1 +1,1 @@
-Copyright 2017 [The Kubernetes Authors](https://github.com/kubernetes/dashboard/graphs/contributors)
+Copyright 2018 [The Kubernetes Authors](https://github.com/kubernetes/dashboard/graphs/contributors)
