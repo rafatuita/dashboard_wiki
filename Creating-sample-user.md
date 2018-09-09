@@ -1,6 +1,6 @@
 In this guide, we will find out how to create a new user using Service Account mechanism of Kubernetes, grant this user admin permissions and log in to Dashboard using bearer token tied to this user.
 
-Copy provided snippets to some `xxx.yaml` file and use `kubectl create -f xxx.yaml` to create them.
+Copy provided snippets to some `xxx.yaml` file and use `kubectl apply -f xxx.yaml` to create them.
 
 ## Create Service Account
 
