@@ -10,10 +10,10 @@ The fastest way of deploying Dashboard has been described in our [README](https:
 
 To access Dashboard directly (without `kubectl proxy`) valid certificates should be used to establish a secure HTTPS connection. They can be generated using public trusted Certificate Authorities like [Let's Encrypt](https://letsencrypt.org/). Use them to replace the auto-generated certificates from Dashboard.
 
-This setup requires, that certificates are stored in a secret named `kubernetes-dashboard-certs` in `kube-system`
-namespace. By default self-signed certificates are generated and stored in-memory. In case you would like to use your custom certificates follow the below steps, otherwise skip directly to the Dashboard deploy part. 
+By default self-signed certificates are generated and stored in-memory. In case you would like to use your custom certificates follow the below steps, otherwise skip directly to the Dashboard deploy part. 
 
-Assuming that you have `dashboard.crt` and `dashboard.key` files stored under `$HOME/certs` directory,
+Custom certificates have to be stored in a secret named `kubernetes-dashboard-certs` in `kube-system`
+namespace. Assuming that you have `dashboard.crt` and `dashboard.key` files stored under `$HOME/certs` directory,
 you should create secret with contents of these files:
 
 ```bash
