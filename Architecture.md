@@ -14,7 +14,7 @@ business logic. The backend implements business logic when remote backends APIs 
 support required use case directly, e.g., “get a list of pods with their CPU usage metric
 timeline”. The figure below outlines the architecture of the project:
 
-![Architecture Overview](https://github.com/kubernetes/dashboard/blob/master/docs/design/architecture.png)
+![Architecture Overview](https://github.com/kubernetes/dashboard/blob/master/docs/images/architecture.png)
 
 The rationale for having a backend that implements business logic:
 
