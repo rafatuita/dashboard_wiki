@@ -5,7 +5,7 @@ This document describes how to setup your development environment.
 Make sure the following software is installed and added to the `$PATH` variable:
 
 * Docker 1.10+ ([installation manual](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/))
-* Golang 1.8+ ([installation manual](https://golang.org/dl/))
+* Golang 1.10.3+ ([installation manual](https://golang.org/dl/))
 * Node.js 8+ and npm 5+ ([installation with nvm](https://github.com/creationix/nvm#usage))
 * Java 7+ ([installation manual](http://openjdk.java.net/install/))
 * Gulp.js 3.9+ ([installation manual](https://github.com/gulpjs/gulp/blob/master/docs/getting-started/1-quick-start.md))
