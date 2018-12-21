@@ -36,7 +36,7 @@ To deploy Dashboard execute
 following command:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/alternative/kubernetes-dashboard.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/alternative/kubernetes-dashboard.yaml
 ```
 
 ## Development release
