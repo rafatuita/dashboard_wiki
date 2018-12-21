@@ -1,4 +1,4 @@
-Dashboard container accepts multiple arguments that can be used to customize it a bit. In example we are using `--tls-key-file` and `--tls-cert-file` flags in our recommended setup [YAML files](https://github.com/kubernetes/dashboard/blob/master/src/deploy/recommended/kubernetes-dashboard.yaml#L114) to pass certificates to Dashboard.
+Dashboard container accepts multiple arguments that can be used to customize it a bit. In example we are using `--tls-key-file` and `--tls-cert-file` flags in our recommended setup [YAML files](https://github.com/kubernetes/dashboard/blob/master/aio/deploy/recommended/kubernetes-dashboard.yaml#L114) to pass certificates to Dashboard.
 
 ## Arguments
 
