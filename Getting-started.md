@@ -48,6 +48,8 @@ $ export KUBE_DASHBOARD_KUBECONFIG="<KUBECONFIG_FILE_PATH>"
 
 ## Serving Dashboard for Development
 
+### NOTE: Below instructions are outdated and will not work properly. We will try to update it ASAP.
+
 It is easy to compile and run Dashboard. Open a new tab in your terminal and type:
 
 ```shell
