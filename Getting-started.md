@@ -13,13 +13,13 @@ Make sure the following software is installed and added to the `$PATH` variable:
 Clone the repository into `$GOPATH/src/github.com/kubernetes/dashboard` and install the dependencies:
 
 ```shell
-$ npm i
+$ npm ci
 ```
 
 If you are running commands with root privileges set `--unsafe-perm` flag:
 
  ```shell
- npm i --unsafe-perm
+ npm ci --unsafe-perm
  ```
 
 ## Running the cluster
