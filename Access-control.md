@@ -102,7 +102,7 @@ token-cleaner-token-gdfq3                kubernetes.io/service-account-token   3
 ttl-controller-token-pt064               kubernetes.io/service-account-token   3         10d
 # Let's get token from 'replicaset-controller-token-kzpmc'. 
 # It should have permissions to see Replica Sets in the cluster.
-$ kubectl -n kube-system describe secret replicaset-controller-token-kzpmc
+$ kubectl -n kube-system describe secrets replicaset-controller-token-kzpmc
 Name:		replicaset-controller-token-kzpmc
 Namespace:	kube-system
 Labels:		<none>
