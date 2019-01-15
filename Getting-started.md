@@ -119,14 +119,12 @@ $ npm run test:backend
 
 ## Committing changes to your fork
 
-Before committing any changes, please link/copy the pre-commit hook into your .git directory. This will keep you from accidentally committing non formatted code.
+Before committing any changes, please run `npm run check`.
+This will keep you from accidentally committing non tested and unformatted code.
 
-The hook requires goimports to be in your PATH.
-
-```shell
-cd <dashboard_home>/.git/hooks/
-ln -s ../../hooks/pre-commit .
-```
+Since the hooks for commit has been set with `husky` into
+`<dashboard_home>/.git/hooks/pre-commit` already if you installed dashboard
+according to above, so it will keep your code as formatted.
 
 Then you can commit your changes and push them to your fork:
 
