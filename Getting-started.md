@@ -26,7 +26,7 @@ If you are running commands with root privileges set `--unsafe-perm` flag:
 To make Dashboard work you need to have cluster running. If you would like to use local cluster we recommend [kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/), [minikube](https://kubernetes.io/docs/getting-started-guides/minikube/) or [kubeadm-dind-cluster](https://github.com/Mirantis/kubeadm-dind-cluster). The most convenient way is to make it work is to create a proxy. Run the following command:
 
 ```shell
-$ kubectl proxy --port=8080
+$ kubectl proxy
 ```
 
 kubectl will handle authentication with Kubernetes and create an API proxy with the address
@@ -53,7 +53,7 @@ Quick updated version:
 npm start
 ```
 
-Open a browser and access the UI under `localhost:9090`.
+Open a browser and access the UI under `localhost:8080`.
 
 In the background, `npm start` makes a [concurrently](https://github.com/kimmobrunfeldt/concurrently#readme) call to start the `golang` backend server and the `angular` development server.
 
