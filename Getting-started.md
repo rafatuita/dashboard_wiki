@@ -129,10 +129,21 @@ according to above, so it will keep your code as formatted.
 Then you can commit your changes and push them to your fork:
 
 ```shell
-git commit
-git push -f origin my-feature
+$ git commit
+$ git push -f origin my-feature
 ```
 
 ## Building dashboard inside a container
 
-As of the "angular migration", there is no longer a clean way to handle building and testing Dashboard within a container. PRs are welcome to help with this. 
+To run dashboard using docker at ease, 
+
+1. Copy kubeconfig from your cluster, and confirm the URL for API server in it, and modify it if necessary.
+2. Set filepath for kubeconfig into `K8S_DASHBOARD_KUBECONFIG` environment variable.
+3. Change directory into your dashboard source directory.
+4. Run `aio/develop/run-npm-on-container.sh`.
+
+The container will build and run dashboard as default. Also, you can run npm commands described in `package.json`. e.g. To run code check:
+`aio/develop/run-npm-on-container.sh run check`
+
+
+
