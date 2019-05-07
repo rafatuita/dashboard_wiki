@@ -133,17 +133,41 @@ $ git commit
 $ git push -f origin my-feature
 ```
 
-## Building dashboard inside a container
+## Easy way to build your development environment with Docker
 
-To run dashboard using docker at ease, 
+At first, change directory to kubernetes dashboard repository of your fork.
+
+### To run dashboard using Docker at ease
+
+1. Run `aio/develop/run-npm-on-container.sh`.
+
+That's all. It will build dashboard container from your local repository, will create also kubernetes cluster container for your dashboard using `kind`, and will run dashboard.
+Then you can see dashboard `http://localhost:8080` with your browser.
+
+### To run with your another Kubernetes cluster
 
 1. Copy kubeconfig from your cluster, and confirm the URL for API server in it, and modify it if necessary.
 2. Set filepath for kubeconfig into `K8S_DASHBOARD_KUBECONFIG` environment variable.
 3. Change directory into your dashboard source directory.
 4. Run `aio/develop/run-npm-on-container.sh`.
 
-The container will build and run dashboard as default. Also, you can run npm commands described in `package.json`. e.g. To run code check:
-`aio/develop/run-npm-on-container.sh run check`
+These manipulations will build container, and run dashboard as default.
+
+### To run npm commands as you want
+
+Also, you can run npm commands described in package.json as you want
+
+e.g.
+1. To test dashboard, run `aio/develop/run-npm-on-container.sh run test`
+2. To check your code changes, run `aio/develop/run-npm-on-container.sh run check`
+
+### To run container without creating cluster and running dashboard
+
+1. Set `K8S_DASHBOARD_CMD` environment variable as `bash`.
+2. Run `aio/develop/run-npm-on-container.sh`.
+3. Run commands as you like.
+
+This runs container with `bash` command.
 
 
 
